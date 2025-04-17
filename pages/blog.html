@@ -1,143 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Basic Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Story's Page – LifeLine Hospital</title>
 
-  <!-- Page Title -->
-  <title>Story's Page – LifeLine Hospital</title>
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
+  <body>
+    <!-- Header / Navigation Bar -->
+    <header class="main-navbar">
+      <div class="container navbar-wrapper">
+        <!-- Brand Logo -->
+        <div class="logo">Health<span>Care</span></div>
 
-<body>
+        <!-- Hamburger Icon for Mobile -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-  <!-- Header / Navigation Bar -->
-  <header class="main-navbar">
-    <div class="container navbar-wrapper">
+        <!-- Navigation Links -->
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./Doctor.html">Doctors</a>
+          <a href="./story.html">Stories</a>
+          <a href="./blog.html" class="active">Blog</a>
+          <a href="#">Emergency</a>
+          <a href="#">Customer Support</a>
+          <!-- ✅ New menu item added -->
 
-      <!-- Brand Logo -->
-      <div class="logo">Health<span>Care</span></div>
+          <!-- Extra Navigation Items -->
+          <div class="nav-extras">
+            <!-- Login and Signup Buttons -->
+            <!-- <button class="btn signup">Sign Up</button> -->
+            <button
+              type="button"
+              id="signupbtn"
+              class="btn signup"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Sign Up
+            </button>
 
-      <!-- Hamburger Icon for Mobile -->
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <!-- Language Selector -->
+            <!-- <select class="lang-switcher" aria-label="Language Switcher">
+              <option value="en">EN</option>
+              <option value="hi">हिंदी</option>
+              <option value="ar">عربي</option>
+            </select> -->
 
-      <!-- Navigation Links -->
-      <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./Doctor.html">Doctors</a>
-        <a href="./story.html">Stories</a>
-        <a href="./blog.html" class="active">Blog</a>
-        <a href="#">Emergency</a>
-        <a href="#">Customer Support</a> <!-- ✅ New menu item added -->
-
-        <!-- Extra Navigation Items -->
-        <div class="nav-extras">
-          <!-- Login and Signup Buttons -->
-          <button class="btn signup">Sign Up</button>
-
-          <!-- Language Selector -->
-          <select class="lang-switcher" aria-label="Language Switcher">
-            <option value="en">EN</option>
-            <option value="hi">हिंदी</option>
-            <option value="ar">عربي</option>
-          </select>
-
-          <!-- Dark Mode Toggle -->
-          <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Patient Stories Section -->
-  <section class="stories-section">
-    <div class="container">
-
-      <!-- Section Heading -->
-      <h2 class="section-title">Blog Page</h2>
-      <p class="section-subtitle">
-        Read inspiring patient stories and news from LifeLine Hospital.
-      </p>
-
-      <!-- Stories Grid -->
-      <div class="page-grid"></div>
-
-      <!-- Pagination -->
-      <div class="pagination">
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Next »</a>
+            <!-- Dark Mode Toggle -->
+            <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+              🌙
+            </button>
+          </div>
+        </nav>
       </div>
+    </header>
 
-    </div>
-  </section>
+    <!-- Patient Stories Section -->
+    <section class="stories-section">
+      <div class="container">
+        <!-- Section Heading -->
+        <h2 class="section-title">Blog Page</h2>
+        <p class="section-subtitle">
+          Read inspiring patient stories and news from LifeLine Hospital.
+        </p>
 
+        <!-- Stories Grid -->
+        <div class="page-grid"></div>
 
-  <footer>
-    <div class="footer-container">
-      <!-- About & Social -->
-      <div class="footer-column">
-        <h4>HealthCare</h4>
-        <p>Your health, our priority. Quality care for everyone, always.</p>
-        <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Pagination -->
+        <div class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Next »</a>
         </div>
       </div>
+    </section>
 
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Doctors</a></li>
-          <li><a href="#">Lab & Diagnostics</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+    <footer>
+      <div class="footer-container">
+        <!-- About & Social -->
+        <div class="footer-column">
+          <h4>HealthCare</h4>
+          <p>Your health, our priority. Quality care for everyone, always.</p>
+          <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Lab & Diagnostics</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Patient Resources -->
+        <div class="footer-column">
+          <h4>Patient Resources</h4>
+          <ul>
+            <li><a href="#">Book Appointment</a></li>
+            <li><a href="#">Health Packages</a></li>
+            <li><a href="#">Insurance Partners</a></li>
+            <li><a href="#">Patient Stories</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
 
-      <!-- Patient Resources -->
-      <div class="footer-column">
-        <h4>Patient Resources</h4>
-        <ul>
-          <li><a href="#">Book Appointment</a></li>
-          <li><a href="#">Health Packages</a></li>
-          <li><a href="#">Insurance Partners</a></li>
-          <li><a href="#">Patient Stories</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
+      <div class="footer-bottom">
+        &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
       </div>
+    </footer>
 
-      <!-- Newsletter -->
-      <div class="footer-column">
-        <h4>Stay Connected</h4>
-        <p>Subscribe to our newsletter for health tips and updates.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
+    <!-- ================/modal=================== -->
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header w-100 d-flex justify-content-center">
+            <h1
+              class="modal-title fs-3 text-center mx-auto"
+              id="registerModalLabel"
+            >
+              Register As
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div
+            class="modal-body d-flex flex-wrap justify-content-evenly gap-3w"
+          >
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">User</h4>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="btn btn-warning"
+                >
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user-doctor fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">Doctor</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i
+                    class="fa-solid fa-house-medical-circle-check fa-3x text-warning"
+                  ></i>
+                </h5>
+                <h4 class="card-text">Hospital</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
-    </div>
-  </footer>
-  <script src="../assets/js/script.js"></script>
-</body>
+    <!-- doctor-form-modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              position: sticky;
+              top: 0 !important;
+              z-index: 1;
+              background-color: #fff;
+              width: 466px;
+            "
+          >
+            <h2 class="form-title">Patient Registration Form</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container patient-form-body">
+              <div class="patient-form-left-panel">
+                <div class="patient-form-logo">🩺</div>
+                <h2>Welcome</h2>
+                <p>You are 30 seconds away from booking your appointment!</p>
+              </div>
 
+              <div class="patient-form-right-panel">
+                <h2>Patient Registration Form</h2>
+                <form id="patient-form-registration-form">
+                  <div class="patient-form-grid">
+                    <div class="patient-form-group">
+                      <label for="full-name">Full Name *</label>
+                      <input
+                        type="text"
+                        id="patient-form-full-name"
+                        placeholder="e.g. John Doe"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="email">Email Address *</label>
+                      <input
+                        type="email"
+                        id="patient-form-email"
+                        placeholder="e.g. john.doe@example.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="dob">Date of Birth *</label>
+                      <input type="date" id="patient-form-dob" required />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="phone">Phone Number *</label>
+                      <input
+                        type="tel"
+                        id="patient-form-phone"
+                        placeholder="e.g. 9876543210"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="gender">Gender *</label>
+                      <select id="patient-form-gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="state">State *</label>
+                      <input
+                        list="state-list"
+                        id="patient-form-state"
+                        placeholder="e.g. Maharashtra"
+                        required
+                      />
+                      <!-- Datalist added earlier -->
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="city">City *</label>
+                      <input
+                        type="text"
+                        id="patient-form-city"
+                        placeholder="e.g. Pune"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="zip">ZIP / Pin Code *</label>
+                      <input
+                        type="text"
+                        id="patient-form-zip"
+                        placeholder="e.g. 411001"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="relation">Relation to Patient *</label>
+                      <input
+                        type="text"
+                        id="patient-form-relation"
+                        placeholder="e.g. Self, Son, Daughter"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-doctor"
+                        >Preferred Doctor (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-preferred-doctor"
+                        placeholder="e.g. Dr. A. Sharma"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-date"
+                        >Preferred Date for Checkup *</label
+                      >
+                      <input
+                        type="date"
+                        id="patient-form-preferred-date"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="aadhar">Aadhar Card Number *</label>
+                      <input
+                        type="text"
+                        id="patient-form-aadhar"
+                        placeholder="e.g. 1234 5678 9012"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="symptoms"
+                        >Symptoms / Medical Condition *</label
+                      >
+                      <textarea
+                        id="patient-form-symptoms"
+                        rows="2"
+                        placeholder="e.g. Fever, cough, fatigue for past 3 days"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="medical-reports"
+                        >Previous Medical Reports (Optional)</label
+                      >
+                      <input
+                        type="file"
+                        id="patient-form-medical-reports"
+                        title="Upload any previous medical reports"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="previous-doctors"
+                        >Previous Doctors (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-previous-doctors"
+                        placeholder="e.g. Dr. Patel, Dr. Sinha"
+                      />
+                    </div>
+                  </div>
+
+                  <button type="submit" class="patient-form-submit-btn">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================/modal=================== -->
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>

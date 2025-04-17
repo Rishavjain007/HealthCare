@@ -1,444 +1,863 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HealthCare</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <header class="main-navbar">
+      <div class="container navbar-wrapper">
+        <div class="logo">Health<span>Care</span></div>
 
-<body>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
 
+        <nav class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="./about.html" class="active">About</a>
+          <a href="./Doctor.html">Doctors</a>
+          <a href="./story.html">Stories</a>
+          <a href="./blog.html">Blog</a>
+          <a href="">Emergency</a>
+          <a href="#">Customer Support</a>
+          <!-- ✅ New menu item added -->
 
-  <header class="main-navbar">
-    <div class="container navbar-wrapper">
-      <div class="logo">Health<span>Care</span></div>
+          <div class="nav-extras">
+            <!-- <button class="btn signup">Sign Up</button> -->
 
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <button
+              type="button"
+              id="signupbtn"
+              class="btn signup"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Sign Up
+            </button>
 
-      <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="./about.html" class="active">About</a>
-        <a href="./Doctor.html">Doctors</a>
-        <a href="./story.html">Stories</a>
-        <a href="./blog.html">Blog</a>
-        <a href="">Emergency</a>
-        <a href="#">Customer Support</a> <!-- ✅ New menu item added -->
+            <!-- <select class="lang-switcher">
+              <option value="en">EN</option>
+              <option value="hi">हिंदी</option>
+              <option value="ar">عربي</option>
+            </select> -->
 
-        <div class="nav-extras">
-          <button class="btn signup">Sign Up</button>
+            <button class="dark-mode-toggle">🌙</button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-          <select class="lang-switcher">
-            <option value="en">EN</option>
-            <option value="hi">हिंदी</option>
-            <option value="ar">عربي</option>
-          </select>
-
-          <button class="dark-mode-toggle">🌙</button>
+    <section class="who-section">
+      <div class="container">
+        <div class="who-wrapper">
+          <div class="who-text">
+            <h1>Who <span style="color: aliceblue">We</span> Are</h1>
+            <p class="subtitle">Introduction & Mission</p>
+            <p>
+              Welcome to <strong>HealthCare</strong> – a place where
+              compassionate care meets cutting-edge technology. We are a team of
+              dedicated professionals, committed to bringing you the best in
+              healthcare services.
+            </p>
+            <p>
+              Our mission is simple: to treat every patient with dignity,
+              empathy, and the highest medical standards. Whether it’s a routine
+              check-up or a complex surgery, we stand by our promise to deliver
+              trustworthy and affordable care.
+            </p>
+          </div>
+          <div class="who-img">
+            <!-- <img src="https://img.freepik.com/free-photo/medium-shot-smiley-doctor-with-crossed-arms_23-2148489597.jpg?t=st=1712492882~exp=1712496482~hmac=123b2fdd5dd9e1ae49adcdfe6f07f4fa4c3d148fe86ab8cb4b3e80c7c273af8a" alt="HealthCare"> -->
+            <img
+              src="https://thumbs.dreamstime.com/b/smiling-female-doctor-holding-medical-records-lab-coat-her-office-clipboard-looking-camera-56673035.jpg"
+              alt="HealthCare"
+            />
+          </div>
         </div>
-      </nav>
+      </div>
+    </section>
 
-    </div>
-  </header>
+    <section class="vision-section">
+      <div class="container">
+        <div class="text-center section-head">
+          <h1>Our <span>Vision</span> & <span>Mission</span></h1>
+          <p>Purpose & Goals That Drive Us Every Day</p>
+        </div>
 
-  <section class="who-section">
-    <div class="container">
-      <div class="who-wrapper">
-        <div class="who-text">
-          <h1>Who <span style="color: aliceblue;">We</span> Are</h1>
-          <p class="subtitle">Introduction & Mission</p>
+        <div class="vision-grid">
+          <div class="vision-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+              alt="Vision Icon"
+            />
+            <h2>Our Vision</h2>
+            <p>
+              To be a world-class healthcare provider, offering affordable and
+              accessible medical services while upholding the highest standards
+              of ethics and compassion.
+            </p>
+          </div>
+
+          <div class="vision-box">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+              alt="Mission Icon"
+            />
+            <h2>Our Mission</h2>
+            <p>
+              To deliver exceptional and personalized care through a team of
+              expert doctors, cutting-edge technology, and a patient-first
+              approach that promotes healing and wellness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer-section">
+      <div class="container">
+        <div class="section-header">
+          <h1>What <span>We Offer</span></h1>
           <p>
-            Welcome to <strong>HealthCare</strong> – a place where compassionate care meets cutting-edge technology. We
-            are a team of dedicated professionals, committed to bringing you the best in healthcare services.
-          </p>
-          <p>
-            Our mission is simple: to treat every patient with dignity, empathy, and the highest medical standards.
-            Whether it’s a routine check-up or a complex surgery, we stand by our promise to deliver trustworthy and
-            affordable care.
-          </p>
-        </div>
-        <div class="who-img">
-          <!-- <img src="https://img.freepik.com/free-photo/medium-shot-smiley-doctor-with-crossed-arms_23-2148489597.jpg?t=st=1712492882~exp=1712496482~hmac=123b2fdd5dd9e1ae49adcdfe6f07f4fa4c3d148fe86ab8cb4b3e80c7c273af8a" alt="HealthCare"> -->
-          <img src="https://thumbs.dreamstime.com/b/smiling-female-doctor-holding-medical-records-lab-coat-her-office-clipboard-looking-camera-56673035.jpg" alt="HealthCare">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="vision-section">
-    <div class="container">
-      <div class="text-center section-head">
-        <h1>Our <span>Vision</span> & <span>Mission</span></h1>
-        <p>Purpose & Goals That Drive Us Every Day</p>
-      </div>
-
-      <div class="vision-grid">
-        <div class="vision-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Vision Icon">
-          <h2>Our Vision</h2>
-          <p>
-            To be a world-class healthcare provider, offering affordable and accessible medical services while upholding
-            the highest standards of ethics and compassion.
+            Explore the wide range of healthcare services we provide with care
+            and commitment.
           </p>
         </div>
 
-        <div class="vision-box">
-          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Mission Icon">
-          <h2>Our Mission</h2>
-          <p>
-            To deliver exceptional and personalized care through a team of expert doctors, cutting-edge technology, and
-            a patient-first approach that promotes healing and wellness.
-          </p>
+        <div class="offer-grid">
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/9016/9016411.png"
+              alt="Consultation"
+            />
+            <h3>24/7 Consultation</h3>
+            <p>
+              Get expert advice from top doctors anytime, anywhere — even at
+              midnight!
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4313/4313068.png"
+              alt="Diagnostics"
+            />
+            <h3>Advanced Diagnostics</h3>
+            <p>
+              State-of-the-art lab facilities with accurate and quick reports.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png"
+              alt="Surgeries"
+            />
+            <h3>Surgical Treatments</h3>
+            <p>
+              From minor to major surgeries performed by experienced
+              specialists.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2696/2696095.png"
+              alt="Emergency"
+            />
+            <h3>Emergency Care</h3>
+            <p>
+              Round-the-clock emergency unit with immediate attention and care.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png"
+              alt="Pharmacy"
+            />
+            <h3>On-site Pharmacy</h3>
+            <p>
+              Well-stocked and reliable pharmacy with doorstep delivery
+              available.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2840/2840489.png"
+              alt="Wellness Programs"
+            />
+            <h3>Wellness Programs</h3>
+            <p>
+              Yoga, diet plans, and lifestyle coaching for a healthier, happier
+              you.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3287/3287143.png"
+              alt="Home Care"
+            />
+            <h3>Home Health Services</h3>
+            <p>
+              Nurses and doctors at your doorstep for home visits and care
+              plans.
+            </p>
+          </div>
+
+          <div class="offer-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2618/2618721.png"
+              alt="Online Booking"
+            />
+            <h3>Online Appointments</h3>
+            <p>
+              Book your doctor visit from anywhere in just a few clicks —
+              hassle-free!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-title" style="color: #f7b500">Meet Our Team</h2>
+        <p class="section-subtitle">
+          Our team of professionals are here to give you the best care.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Dr. John Doe"
+            />
+            <h3>Dr. John Doe</h3>
+            <p>Chief Cardiologist</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Dr. Sarah Lee"
+            />
+            <h3>Dr. Sarah Lee</h3>
+            <p>Neurologist</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="https://randomuser.me/api/portraits/men/67.jpg"
+              alt="Dr. Ravi Kumar"
+            />
+            <h3>Dr. Ravi Kumar</h3>
+            <p>Orthopedic Surgeon</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Dr. Aisha Khan"
+            />
+            <h3>Dr. Aisha Khan</h3>
+            <p>Pediatrician</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" style="color: white">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Simple steps to get you the care you need
+        </p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Search Doctor</h3>
+            <p>Find the right specialist by name, department or condition.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Book Appointment</h3>
+            <p>Choose your time slot and confirm your appointment instantly.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Visit & Consult</h3>
+            <p>
+              Meet the doctor online or in-person and get personalized care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us-about">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <p class="section-subtitle">
+          Trusted care with a patient-first approach
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png"
+              alt="24/7 Support"
+            />
+            <h3>24/7 Support</h3>
+            <p>Emergency care and assistance anytime you need us.</p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2463/2463510.png"
+              alt="Expert Doctors"
+            />
+            <h3>Expert Doctors</h3>
+            <p>Highly experienced and compassionate medical professionals.</p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3205/3205240.png"
+              alt="Modern Equipment"
+            />
+            <h3>Modern Equipment</h3>
+            <p>
+              State-of-the-art technology for accurate diagnosis and treatment.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/10462/10462458.png"
+              alt="Affordable Care"
+            />
+            <h3>Affordable Care</h3>
+            <p>Transparent pricing with no hidden charges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-journey">
+      <div class="container">
+        <h2 class="section-title">Our Journey</h2>
+        <p class="section-subtitle">
+          A timeline of milestones that shaped our care
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png"
+                alt="Founded"
+              />
+            </div>
+            <div class="timeline-content">
+              <h3>2010 – Founded</h3>
+              <p>
+                HealthCare was established with a mission to provide quality
+                healthcare to all.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/599/599305.png"
+                alt="1000 Patients"
+              />
+            </div>
+            <div class="timeline-content">
+              <h3>2013 – First 1000 Patients</h3>
+              <p>
+                Successfully treated 1000+ patients within the first three years
+                of operation.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png"
+                alt="New Wing"
+              />
+            </div>
+            <div class="timeline-content">
+              <h3>2017 – New Wing Added</h3>
+              <p>Launched our advanced diagnostics and ICU facilities.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png"
+                alt="Online Services"
+              />
+            </div>
+            <div class="timeline-content">
+              <h3>2022 – Online Services Launched</h3>
+              <p>
+                Telemedicine, online bookings, and reports made available
+                digitally.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find answers to common questions about our hospital and services.
+        </p>
+
+        <div class="faq-item">
+          <input type="checkbox" id="faq1" />
+          <label for="faq1" class="faq-question"
+            >What services does HealthCare offer?</label
+          >
+          <div class="faq-answer">
+            <p>
+              We offer emergency care, diagnostics, surgery, outpatient and
+              inpatient care, wellness programs, and telemedicine services.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <input type="checkbox" id="faq2" />
+          <label for="faq2" class="faq-question"
+            >How can I book an appointment?</label
+          >
+          <div class="faq-answer">
+            <p>
+              You can book appointments through our website, mobile app, or by
+              calling our front desk directly.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <input type="checkbox" id="faq3" />
+          <label for="faq3" class="faq-question"
+            >Do you accept health insurance?</label
+          >
+          <div class="faq-answer">
+            <p>
+              Yes, we accept most major health insurance plans. Please check
+              with our billing desk for your specific provider.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <input type="checkbox" id="faq4" />
+          <label for="faq4" class="faq-question"
+            >Are online consultations available?</label
+          >
+          <div class="faq-answer">
+            <p>
+              Yes, we offer teleconsultation services via video call, accessible
+              through our mobile app or web portal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          We’re here to help you. Reach out to us anytime!
+        </p>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p>
+              <strong>📍 Address:</strong> 123 HealthCare Street, MediCity,
+              India
+            </p>
+            <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p><strong>📧 Email:</strong> contact@HealthCare.com</p>
+            <p><strong>🕒 Hours:</strong> Mon - Sun | 24/7 Open</p>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- About & Social -->
+        <div class="footer-column">
+          <h4>HealthCare</h4>
+          <p>Your health, our priority. Quality care for everyone, always.</p>
+          <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Lab & Diagnostics</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Patient Resources -->
+        <div class="footer-column">
+          <h4>Patient Resources</h4>
+          <ul>
+            <li><a href="#">Book Appointment</a></li>
+            <li><a href="#">Health Packages</a></li>
+            <li><a href="#">Insurance Partners</a></li>
+            <li><a href="#">Patient Stories</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
+      </div>
+    </footer>
+
+    <!-- ================/modal=================== -->
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header w-100 d-flex justify-content-center">
+            <h1
+              class="modal-title fs-3 text-center mx-auto"
+              id="registerModalLabel"
+            >
+              Register As
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div
+            class="modal-body d-flex flex-wrap justify-content-evenly gap-3w"
+          >
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">User</h4>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="btn btn-warning"
+                >
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user-doctor fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">Doctor</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i
+                    class="fa-solid fa-house-medical-circle-check fa-3x text-warning"
+                  ></i>
+                </h5>
+                <h4 class="card-text">Hospital</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-
-  <section class="offer-section">
-    <div class="container">
-      <div class="section-header">
-        <h1>What <span>We Offer</span></h1>
-        <p>Explore the wide range of healthcare services we provide with care and commitment.</p>
-      </div>
-
-      <div class="offer-grid">
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/9016/9016411.png" alt="Consultation">
-          <h3>24/7 Consultation</h3>
-          <p>Get expert advice from top doctors anytime, anywhere — even at midnight!</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/4313/4313068.png" alt="Diagnostics">
-          <h3>Advanced Diagnostics</h3>
-          <p>State-of-the-art lab facilities with accurate and quick reports.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3222/3222800.png" alt="Surgeries">
-          <h3>Surgical Treatments</h3>
-          <p>From minor to major surgeries performed by experienced specialists.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2696/2696095.png" alt="Emergency">
-          <h3>Emergency Care</h3>
-          <p>Round-the-clock emergency unit with immediate attention and care.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Pharmacy">
-          <h3>On-site Pharmacy</h3>
-          <p>Well-stocked and reliable pharmacy with doorstep delivery available.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2840/2840489.png" alt="Wellness Programs">
-          <h3>Wellness Programs</h3>
-          <p>Yoga, diet plans, and lifestyle coaching for a healthier, happier you.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3287/3287143.png" alt="Home Care">
-          <h3>Home Health Services</h3>
-          <p>Nurses and doctors at your doorstep for home visits and care plans.</p>
-        </div>
-
-        <div class="offer-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2618/2618721.png" alt="Online Booking">
-          <h3>Online Appointments</h3>
-          <p>Book your doctor visit from anywhere in just a few clicks — hassle-free!</p>
-        </div>
-
-
-      </div>
-    </div>
-
-
-  </section>
-
-  <section class="team-section">
-    <div class="container">
-      <h2 class="section-title" style="  color: #f7b500;">Meet Our Team</h2>
-      <p class="section-subtitle">Our team of professionals are here to give you the best care.</p>
-
-      <div class="team-grid">
-        <div class="team-card">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. John Doe">
-          <h3>Dr. John Doe</h3>
-          <p>Chief Cardiologist</p>
-        </div>
-        <div class="team-card">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Sarah Lee">
-          <h3>Dr. Sarah Lee</h3>
-          <p>Neurologist</p>
-        </div>
-        <div class="team-card">
-          <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Dr. Ravi Kumar">
-          <h3>Dr. Ravi Kumar</h3>
-          <p>Orthopedic Surgeon</p>
-        </div>
-        <div class="team-card">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Aisha Khan">
-          <h3>Dr. Aisha Khan</h3>
-          <p>Pediatrician</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="how-it-works" style="color: white;">
-    <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <p class="section-subtitle">Simple steps to get you the care you need</p>
-
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <h3>Search Doctor</h3>
-          <p>Find the right specialist by name, department or condition.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <h3>Book Appointment</h3>
-          <p>Choose your time slot and confirm your appointment instantly.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <h3>Visit & Consult</h3>
-          <p>Meet the doctor online or in-person and get personalized care.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="why-choose-us-about">
-    <div class="container">
-      <h2 class="section-title">Why Choose Us?</h2>
-      <p class="section-subtitle">Trusted care with a patient-first approach</p>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" alt="24/7 Support">
-          <h3>24/7 Support</h3>
-          <p>Emergency care and assistance anytime you need us.</p>
-        </div>
-        <div class="feature-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/2463/2463510.png" alt="Expert Doctors">
-          <h3>Expert Doctors</h3>
-          <p>Highly experienced and compassionate medical professionals.</p>
-        </div>
-        <div class="feature-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/3205/3205240.png" alt="Modern Equipment">
-          <h3>Modern Equipment</h3>
-          <p>State-of-the-art technology for accurate diagnosis and treatment.</p>
-        </div>
-        <div class="feature-card">
-          <img src="https://cdn-icons-png.flaticon.com/512/10462/10462458.png" alt="Affordable Care">
-          <h3>Affordable Care</h3>
-          <p>Transparent pricing with no hidden charges.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="our-journey">
-    <div class="container">
-      <h2 class="section-title">Our Journey</h2>
-      <p class="section-subtitle">A timeline of milestones that shaped our care</p>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-img">
-            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Founded">
+    <!-- doctor-form-modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              position: sticky;
+              top: 0 !important;
+              z-index: 1;
+              background-color: #fff;
+              width: 466px;
+            "
+          >
+            <h2 class="form-title">Patient Registration Form</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="timeline-content">
-            <h3>2010 – Founded</h3>
-            <p>HealthCare was established with a mission to provide quality healthcare to all.</p>
+          <div class="modal-body">
+            <div class="container patient-form-body">
+              <div class="patient-form-left-panel">
+                <div class="patient-form-logo">🩺</div>
+                <h2>Welcome</h2>
+                <p>You are 30 seconds away from booking your appointment!</p>
+              </div>
+
+              <div class="patient-form-right-panel">
+                <h2>Patient Registration Form</h2>
+                <form id="patient-form-registration-form">
+                  <div class="patient-form-grid">
+                    <div class="patient-form-group">
+                      <label for="full-name">Full Name *</label>
+                      <input
+                        type="text"
+                        id="patient-form-full-name"
+                        placeholder="e.g. John Doe"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="email">Email Address *</label>
+                      <input
+                        type="email"
+                        id="patient-form-email"
+                        placeholder="e.g. john.doe@example.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="dob">Date of Birth *</label>
+                      <input type="date" id="patient-form-dob" required />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="phone">Phone Number *</label>
+                      <input
+                        type="tel"
+                        id="patient-form-phone"
+                        placeholder="e.g. 9876543210"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="gender">Gender *</label>
+                      <select id="patient-form-gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="state">State *</label>
+                      <input
+                        list="state-list"
+                        id="patient-form-state"
+                        placeholder="e.g. Maharashtra"
+                        required
+                      />
+                      <!-- Datalist added earlier -->
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="city">City *</label>
+                      <input
+                        type="text"
+                        id="patient-form-city"
+                        placeholder="e.g. Pune"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="zip">ZIP / Pin Code *</label>
+                      <input
+                        type="text"
+                        id="patient-form-zip"
+                        placeholder="e.g. 411001"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="relation">Relation to Patient *</label>
+                      <input
+                        type="text"
+                        id="patient-form-relation"
+                        placeholder="e.g. Self, Son, Daughter"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-doctor"
+                        >Preferred Doctor (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-preferred-doctor"
+                        placeholder="e.g. Dr. A. Sharma"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-date"
+                        >Preferred Date for Checkup *</label
+                      >
+                      <input
+                        type="date"
+                        id="patient-form-preferred-date"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="aadhar">Aadhar Card Number *</label>
+                      <input
+                        type="text"
+                        id="patient-form-aadhar"
+                        placeholder="e.g. 1234 5678 9012"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="symptoms"
+                        >Symptoms / Medical Condition *</label
+                      >
+                      <textarea
+                        id="patient-form-symptoms"
+                        rows="2"
+                        placeholder="e.g. Fever, cough, fatigue for past 3 days"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="medical-reports"
+                        >Previous Medical Reports (Optional)</label
+                      >
+                      <input
+                        type="file"
+                        id="patient-form-medical-reports"
+                        title="Upload any previous medical reports"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="previous-doctors"
+                        >Previous Doctors (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-previous-doctors"
+                        placeholder="e.g. Dr. Patel, Dr. Sinha"
+                      />
+                    </div>
+                  </div>
+
+                  <button type="submit" class="patient-form-submit-btn">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-img">
-            <img src="https://cdn-icons-png.flaticon.com/512/599/599305.png" alt="1000 Patients">
-          </div>
-          <div class="timeline-content">
-            <h3>2013 – First 1000 Patients</h3>
-            <p>Successfully treated 1000+ patients within the first three years of operation.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-img">
-            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="New Wing">
-          </div>
-          <div class="timeline-content">
-            <h3>2017 – New Wing Added</h3>
-            <p>Launched our advanced diagnostics and ICU facilities.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-img">
-            <img src="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" alt="Online Services">
-          </div>
-          <div class="timeline-content">
-            <h3>2022 – Online Services Launched</h3>
-            <p>Telemedicine, online bookings, and reports made available digitally.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="faq-section">
-    <div class="container">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-subtitle">Find answers to common questions about our hospital and services.</p>
-
-      <div class="faq-item">
-        <input type="checkbox" id="faq1">
-        <label for="faq1" class="faq-question">What services does HealthCare offer?</label>
-        <div class="faq-answer">
-          <p>We offer emergency care, diagnostics, surgery, outpatient and inpatient care, wellness programs, and
-            telemedicine services.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <input type="checkbox" id="faq2">
-        <label for="faq2" class="faq-question">How can I book an appointment?</label>
-        <div class="faq-answer">
-          <p>You can book appointments through our website, mobile app, or by calling our front desk directly.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <input type="checkbox" id="faq3">
-        <label for="faq3" class="faq-question">Do you accept health insurance?</label>
-        <div class="faq-answer">
-          <p>Yes, we accept most major health insurance plans. Please check with our billing desk for your specific
-            provider.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <input type="checkbox" id="faq4">
-        <label for="faq4" class="faq-question">Are online consultations available?</label>
-        <div class="faq-answer">
-          <p>Yes, we offer teleconsultation services via video call, accessible through our mobile app or web portal.
-          </p>
         </div>
       </div>
     </div>
-  </section>
+    <!-- ================/modal=================== -->
 
-
-  <section class="contact-section">
-    <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="section-subtitle">We’re here to help you. Reach out to us anytime!</p>
-
-      <div class="contact-wrapper">
-        <!-- Contact Info -->
-        <div class="contact-info">
-          <h3>Contact Details</h3>
-          <p><strong>📍 Address:</strong> 123 HealthCare Street, MediCity, India</p>
-          <p><strong>📞 Phone:</strong> +91 98765 43210</p>
-          <p><strong>📧 Email:</strong> contact@HealthCare.com</p>
-          <p><strong>🕒 Hours:</strong> Mon - Sun | 24/7 Open</p>
-        </div>
-
-        <!-- Contact Form -->
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-
-
-  <footer>
-    <div class="footer-container">
-      <!-- About & Social -->
-      <div class="footer-column">
-        <h4>HealthCare</h4>
-        <p>Your health, our priority. Quality care for everyone, always.</p>
-        <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Doctors</a></li>
-          <li><a href="#">Lab & Diagnostics</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Patient Resources -->
-      <div class="footer-column">
-        <h4>Patient Resources</h4>
-        <ul>
-          <li><a href="#">Book Appointment</a></li>
-          <li><a href="#">Health Packages</a></li>
-          <li><a href="#">Insurance Partners</a></li>
-          <li><a href="#">Patient Stories</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="footer-column">
-        <h4>Stay Connected</h4>
-        <p>Subscribe to our newsletter for health tips and updates.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
-    </div>
-  </footer>
-
-
-  <script src="../assets/js/script.js"></script>
-</body>
-
+    <script src="../assets/js/script.js"></script>
+  </body>
 </html>

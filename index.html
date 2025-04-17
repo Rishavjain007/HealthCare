@@ -1,648 +1,792 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/fontawesome-free-6.7.2-web/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HealthCare</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/fontawesome-free-6.7.2-web/all.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- navbar -->
+    <header class="main-navbar">
+      <div class="container navbar-wrapper">
+        <div class="logo">Health<span>Care</span></div>
 
-<body>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-  <!-- navbar -->
-  <header class="main-navbar">
-    <div class="container navbar-wrapper">
-      <div class="logo">Health<span>Care</span></div>
+        <nav class="nav-links">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./pages/about.html">About</a>
+          <a href="./pages/Doctor.html">Doctors</a>
+          <a href="./pages/story.html">Stories</a>
+          <a href="./pages/blog.html">Blog</a>
+          <a href="#">Emergency</a>
+          <a href="#">Customer Support</a>
+          <!-- ✅ New menu item added -->
 
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
-
-      <nav class="nav-links">
-        <a href="./index.html" class="active">Home</a>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/Doctor.html">Doctors</a>
-        <a href="./pages/story.html">Stories</a>
-        <a href="./pages/blog.html">Blog</a>
-        <a href="#">Emergency</a>
-        <a href="#">Customer Support</a>
-        <!-- ✅ New menu item added -->
-
-        <div class="nav-extras">
-          <!-- <button class="btn signup" id="signupbtn">Sign Up</button> -->
-          <button type="button" id="signupbtn" class="btn signup" data-bs-toggle="modal"
-            data-bs-target="#registerModal">
-            Sign Up
-          </button>
-          <select class="lang-switcher" aria-label="Language Switcher">
+          <div class="nav-extras">
+            <!-- <button class="btn signup" id="signupbtn">Sign Up</button> -->
+            <button
+              type="button"
+              id="signupbtn"
+              class="btn signup"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Sign Up
+            </button>
+            <!-- <select class="lang-switcher" aria-label="Language Switcher">
             <option value="en">EN</option>
             <option value="hi">हिंदी</option>
             <option value="ar">عربي</option>
-          </select>
-          <button class="dark-mode-toggle">🌙</button>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <!-- /navbar -->
-
-
-  <!-- section 1 --> 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="hero-left">
-          <h1>Your Health is <span>Our Priority</span></h1>
-          <p>We provide expert medical consultations, diagnostics, and treatments with compassion and care. Book your
-            appointment today with our experienced doctors.</p>
-          <a href="#" class="btn primary">Book Appointment</a>
-        </div>
+          </select> -->
+            <button class="dark-mode-toggle">🌙</button>
+          </div>
+        </nav>
       </div>
-      <div class="col-lg-6">
-        <div class="hero-right">
-          <div class="image-wrapper">
-            <img
-              src="https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?w=740&t=st=1684844770~exp=1684845370~hmac=6ff23f1721b0dcbf2dfde4b015c7c44a3d7c7ac03e3a6f76b00d9ea598b80b3d"
-              alt="Doctor Image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /section 1 -->
+    </header>
+    <!-- /navbar -->
 
-
-  <!-- section 2 -->
-  <section class="why-choose-us py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Why <span>Choose Us</span>?</h2>
-      <p class="section-subtitle mb-5">
-        Delivering excellence in healthcare with compassion, technology, and
-        trust.
-      </p>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">💡</div>
-            <h4>Expert Doctors</h4>
+    <!-- section 1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="hero-left">
+            <h1>Your Health is <span>Our Priority</span></h1>
             <p>
-              Highly qualified and experienced specialists across multiple
-              disciplines.
+              We provide expert medical consultations, diagnostics, and
+              treatments with compassion and care. Book your appointment today
+              with our experienced doctors.
             </p>
+            <a href="#" class="btn primary">Book Appointment</a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">⏱️</div>
-            <h4>24/7 Emergency</h4>
-            <p>
-              Always ready with round-the-clock emergency medical support and
-              care.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">🧪</div>
-            <h4>Modern Diagnostics</h4>
-            <p>
-              Advanced labs and technology for accurate and quick diagnosis.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">🏥</div>
-            <h4>State-of-the-art Facility</h4>
-            <p>
-              Well-equipped infrastructure to ensure comfort and top-tier
-              treatment.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">👨‍⚕️</div>
-            <h4>Patient-Centered Care</h4>
-            <p>
-              We treat you like family, with empathy, respect, and
-              personalized care plans.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-box">
-            <div class="icon">💊</div>
-            <h4>In-House Pharmacy</h4>
-            <p>
-              Get prescribed medicines immediately without stepping outside.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /section 2 -->
-
-
-  <!-- section 3 -->
-  <section class="top-doctors py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Meet Our <span>Top Doctors</span></h2>
-      <p class="section-subtitle mb-5">
-        Handpicked specialists committed to your health and wellbeing.
-      </p>
-
-      <div class="row g-4">
-        <!-- Doctor 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="doctor-card">
-            <img src="https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?w=740" alt="Dr. John Smith"
-              class="doctor-img" />
-            <h4>Dr. John Smith</h4>
-            <p>Cardiologist</p>
-          </div>
-        </div>
-        <!-- Doctor 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="doctor-card">
-            <img
-              src="https://img.freepik.com/free-photo/female-doctor-wearing-coat-with-stethoscope-isolated_1303-29724.jpg?w=740"
-              alt="Dr. Lisa Ray" class="doctor-img" />
-            <h4>Dr. Lisa Ray</h4>
-            <p>Pediatrician</p>
-          </div>
-        </div>
-        <!-- Doctor 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="doctor-card">
-            <img src="https://img.freepik.com/free-photo/portrait-doctor-smiling-hospital_1303-20642.jpg?w=740"
-              alt="Dr. Mark Lee" class="doctor-img" />
-            <h4>Dr. Mark Lee</h4>
-            <p>Orthopedic Surgeon</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /section 3 -->
-
-
-  <!-- section 4 -->
-  <section class="specialties py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Specialties <span>We Cover</span></h2>
-      <p class="section-subtitle mb-5">
-        We offer a wide range of medical services led by expert specialists.
-      </p>
-
-      <div class="row g-4">
-        <!-- Specialty 1 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="specialty-card">
-            <div class="icon">🫀</div>
-            <h5>Cardiology</h5>
-            <p>Heart health & diagnostics</p>
-          </div>
-        </div>
-        <!-- Specialty 2 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="specialty-card">
-            <div class="icon">🧠</div>
-            <h5>Neurology</h5>
-            <p>Brain & nervous system</p>
-          </div>
-        </div>
-        <!-- Specialty 3 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="specialty-card">
-            <div class="icon">🦴</div>
-            <h5>Orthopedics</h5>
-            <p>Bone & joint treatments</p>
-          </div>
-        </div>
-        <!-- Specialty 4 -->
-        <div class="col-md-6 col-lg-3">
-          <div class="specialty-card">
-            <div class="icon">👶</div>
-            <h5>Pediatrics</h5>
-            <p>Child health & wellness</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /section 4 -->
-
-
-  <!-- section 5 -->
-  <section class="testimonials py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">What <span>Patients Say</span></h2>
-      <p class="section-subtitle mb-5">
-        Real experiences from people we’ve had the honor to care for.
-      </p>
-
-      <div class="row g-4">
-        <!-- Testimonial 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p>
-              "HealthCare saved my life. The doctors were incredibly attentive
-              and supportive through my recovery."
-            </p>
-            <h6>- Sarah Malik</h6>
-            <small>Recovered from heart surgery</small>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p>
-              "The staff treated my child with such care and love. It felt
-              like family. Thank you, HealthCare"
-            </p>
-            <h6>- Ahmed Khan</h6>
-            <small>Father of pediatric patient</small>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="testimonial-card">
-            <p>
-              "Amazing experience! From diagnosis to treatment, the entire
-              process was smooth and professional."
-            </p>
-            <h6>- Rina Das</h6>
-            <small>General consultation</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /section 5 -->
-
-
-  <!-- section 6 -->
-  <section class="blog py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Health Tips & <span>Articles</span></h2>
-      <p class="section-subtitle mb-5">
-        Stay informed with the latest advice and news from our medical
-        experts.
-      </p>
-
-      <div class="row g-4">
-        <!-- Blog Post 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <img src="https://img.freepik.com/free-photo/doctor-talking-patient-hospital-room_23-2149284875.jpg?w=740"
-              alt="Article 1" />
-            <div class="blog-content">
-              <h5>5 Ways to Keep Your Heart Healthy</h5>
-              <p>
-                Simple lifestyle changes you can make today to protect your
-                cardiovascular health.
-              </p>
-              <a href="#">Read More →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog Post 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <img
-              src="https://img.freepik.com/free-photo/nutritionist-presenting-healthy-diet-plan_23-2148740539.jpg?w=740"
-              alt="Article 2" />
-            <div class="blog-content">
-              <h5>Nutrition Tips for Strong Immunity</h5>
-              <p>
-                Boost your immune system with these doctor-recommended dietary
-                tips.
-              </p>
-              <a href="#">Read More →</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Blog Post 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="blog-card">
-            <img src="https://img.freepik.com/free-photo/woman-practicing-yoga-home_23-2149100766.jpg?w=740"
-              alt="Article 3" />
-            <div class="blog-content">
-              <h5>Managing Stress Through Mindfulness</h5>
-              <p>
-                How meditation and breathing exercises can support your mental
-                health.
-              </p>
-              <a href="#">Read More →</a>
+        <div class="col-lg-6">
+          <div class="hero-right">
+            <div class="image-wrapper">
+              <img
+                src="https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?w=740&t=st=1684844770~exp=1684845370~hmac=6ff23f1721b0dcbf2dfde4b015c7c44a3d7c7ac03e3a6f76b00d9ea598b80b3d"
+                alt="Doctor Image"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- /section 6 -->
+    <!-- /section 1 -->
 
-
-  <!-- section 7 -->
-  <section class="emergency-contact py-5 text-white">
-    <div class="container text-center">
-      <h2 class="section-title mb-3">
-        Need Help? <span>Emergency Contact</span>
-      </h2>
-      <p class="section-subtitle mb-4">
-        In case of medical emergencies, don’t wait. Call us immediately for
-        quick assistance and support.
-      </p>
-
-      <div class="contact-box mx-auto">
-        <h3 class="mb-3">📞 24/7 Emergency Hotline</h3>
-        <a href="tel:+911234567890" class="emergency-number">+91 12345 67890</a>
-        <p class="mt-3">
-          Or visit our Emergency Department directly – we’re always ready to
-          help you.
+    <!-- section 2 -->
+    <section class="why-choose-us py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Why <span>Choose Us</span>?</h2>
+        <p class="section-subtitle mb-5">
+          Delivering excellence in healthcare with compassion, technology, and
+          trust.
         </p>
-      </div>
-    </div>
-  </section>
-  <!-- /section 7 -->
 
-
-  <!-- section 8 -->
-  <section class="join-us py-5">
-    <div class="container text-center">
-      <h2 class="section-title mb-4">Join <span>Our Network</span></h2>
-      <p class="section-subtitle mb-5">
-        Are you a doctor or a healthcare facility? Partner with us to deliver
-        high-quality care and reach more patients.
-      </p>
-
-      <div class="row justify-content-center g-4">
-        <!-- Doctor Join Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="join-card">
-            <img src="https://img.freepik.com/free-photo/doctor-wearing-stethoscope_23-2148819622.jpg?w=740"
-              alt="Join as Doctor" />
-            <h5 class="mt-3">Join as a Doctor</h5>
-            <p>
-              Grow your practice and connect with more patients by joining our
-              platform.
-            </p>
-            <a href="#" class="btn btn-primary">Register Now</a>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">💡</div>
+              <h4>Expert Doctors</h4>
+              <p>
+                Highly qualified and experienced specialists across multiple
+                disciplines.
+              </p>
+            </div>
           </div>
-        </div>
-
-        <!-- Hospital Join Card -->
-        <div class="col-md-6 col-lg-4">
-          <div class="join-card">
-            <img src="https://img.freepik.com/free-photo/hospital-building-modern-architecture_23-2149329179.jpg?w=740"
-              alt="Join as Hospital" />
-            <h5 class="mt-3">Join as a Hospital</h5>
-            <p>
-              Expand your reach and improve services with our network support
-              and tools.
-            </p>
-            <a href="#" class="btn btn-outline-primary">Partner With Us</a>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">⏱️</div>
+              <h4>24/7 Emergency</h4>
+              <p>
+                Always ready with round-the-clock emergency medical support and
+                care.
+              </p>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /section 8 -->
-
-
-  <!-- footer     -->
-  <footer>
-    <div class="footer-container">
-      <!-- About & Social -->
-      <div class="footer-column">
-        <h4>HealthCare</h4>
-        <p>Your health, our priority. Quality care for everyone, always.</p>
-        <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
-        <div class="footer-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Departments</a></li>
-          <li><a href="#">Doctors</a></li>
-          <li><a href="#">Lab & Diagnostics</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Patient Resources -->
-      <div class="footer-column">
-        <h4>Patient Resources</h4>
-        <ul>
-          <li><a href="#">Book Appointment</a></li>
-          <li><a href="#">Health Packages</a></li>
-          <li><a href="#">Insurance Partners</a></li>
-          <li><a href="#">Patient Stories</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="footer-column">
-        <h4>Stay Connected</h4>
-        <p>Subscribe to our newsletter for health tips and updates.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
-    </div>
-  </footer>
-  <!-- /footer     -->
-
-
-
-  <div
-  class="modal fade"
-  id="registerModal"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="registerModalLabel"
->
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header w-100 d-flex justify-content-center">
-        <h1 class="modal-title fs-3 text-center mx-auto" id="registerModalLabel">
-          Register As
-        </h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body d-flex flex-wrap justify-content-evenly gap-3w">
-        <div class="card" style="width: 18rem">
-          <div class="card-body text-center">
-            <h5 class="card-title"><i class="fa-solid fa-user fa-3x text-warning"></i></h5>
-            <h4 class="card-text">User</h4>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-warning">Register Now</button>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">🧪</div>
+              <h4>Modern Diagnostics</h4>
+              <p>
+                Advanced labs and technology for accurate and quick diagnosis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body text-center">
-            <h5 class="card-title"><i class="fa-solid fa-user-doctor fa-3x text-warning"></i></h5>
-            <h4 class="card-text">Doctor</h4>
-            <button type="button" class="btn btn-warning">Register Now</button>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">🏥</div>
+              <h4>State-of-the-art Facility</h4>
+              <p>
+                Well-equipped infrastructure to ensure comfort and top-tier
+                treatment.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <div class="card-body text-center">
-            <h5 class="card-title"><i class="fa-solid fa-house-medical-circle-check fa-3x text-warning"></i></h5>
-            <h4 class="card-text">Hospital</h4>
-            <button type="button" class="btn btn-warning">Register Now</button>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">👨‍⚕️</div>
+              <h4>Patient-Centered Care</h4>
+              <p>
+                We treat you like family, with empathy, respect, and
+                personalized care plans.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="feature-box">
+              <div class="icon">💊</div>
+              <h4>In-House Pharmacy</h4>
+              <p>
+                Get prescribed medicines immediately without stepping outside.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
+    <!-- /section 2 -->
 
+    <!-- section 3 -->
+    <section class="top-doctors py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Meet Our <span>Top Doctors</span></h2>
+        <p class="section-subtitle mb-5">
+          Handpicked specialists committed to your health and wellbeing.
+        </p>
 
-
-
-<!-- doctor-form-modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header" style="position: sticky; top: 0 !important; z-index: 1; background-color: #fff; width: 466px;">
-        <h2 class="form-title">Patient Registration Form</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container patient-form-body">
-          <div class="patient-form-left-panel">
-            <div class="patient-form-logo">🩺</div>
-            <h2>Welcome</h2>
-            <p>You are 30 seconds away from booking your appointment!</p>
+        <div class="row g-4">
+          <!-- Doctor 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="doctor-card">
+              <img
+                src="https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?w=740"
+                alt="Dr. John Smith"
+                class="doctor-img"
+              />
+              <h4>Dr. John Smith</h4>
+              <p>Cardiologist</p>
+            </div>
           </div>
-      
-          <div class="patient-form-right-panel">
-            <h2>Patient Registration Form</h2>
-            <form id="patient-form-registration-form">
-              <div class="patient-form-grid">
-            
-                <div class="patient-form-group">
-                  <label for="full-name">Full Name *</label>
-                  <input type="text" id="patient-form-full-name" placeholder="e.g. John Doe" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="patient-form-email" placeholder="e.g. john.doe@example.com" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="dob">Date of Birth *</label>
-                  <input type="date" id="patient-form-dob" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="phone">Phone Number *</label>
-                  <input type="tel" id="patient-form-phone" placeholder="e.g. 9876543210" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="gender">Gender *</label>
-                  <select id="patient-form-gender" required>
-                    <option value="">Select Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="state">State *</label>
-                  <input list="state-list" id="patient-form-state" placeholder="e.g. Maharashtra" required />
-                  <!-- Datalist added earlier -->
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="city">City *</label>
-                  <input type="text" id="patient-form-city" placeholder="e.g. Pune" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="zip">ZIP / Pin Code *</label>
-                  <input type="text" id="patient-form-zip" placeholder="e.g. 411001" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="relation">Relation to Patient *</label>
-                  <input type="text" id="patient-form-relation" placeholder="e.g. Self, Son, Daughter" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="preferred-doctor">Preferred Doctor (Optional)</label>
-                  <input type="text" id="patient-form-preferred-doctor" placeholder="e.g. Dr. A. Sharma" />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="preferred-date">Preferred Date for Checkup *</label>
-                  <input type="date" id="patient-form-preferred-date" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="aadhar">Aadhar Card Number *</label>
-                  <input type="text" id="patient-form-aadhar" placeholder="e.g. 1234 5678 9012" required />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="symptoms">Symptoms / Medical Condition *</label>
-                  <textarea id="patient-form-symptoms" rows="2" placeholder="e.g. Fever, cough, fatigue for past 3 days" required></textarea>
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="medical-reports">Previous Medical Reports (Optional)</label>
-                  <input type="file" id="patient-form-medical-reports" title="Upload any previous medical reports" />
-                </div>
-            
-                <div class="patient-form-group">
-                  <label for="previous-doctors">Previous Doctors (Optional)</label>
-                  <input type="text" id="patient-form-previous-doctors" placeholder="e.g. Dr. Patel, Dr. Sinha" />
-                </div>
-            
+          <!-- Doctor 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="doctor-card">
+              <img
+                src="https://img.freepik.com/free-photo/female-doctor-wearing-coat-with-stethoscope-isolated_1303-29724.jpg?w=740"
+                alt="Dr. Lisa Ray"
+                class="doctor-img"
+              />
+              <h4>Dr. Lisa Ray</h4>
+              <p>Pediatrician</p>
+            </div>
+          </div>
+          <!-- Doctor 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="doctor-card">
+              <img
+                src="https://img.freepik.com/free-photo/portrait-doctor-smiling-hospital_1303-20642.jpg?w=740"
+                alt="Dr. Mark Lee"
+                class="doctor-img"
+              />
+              <h4>Dr. Mark Lee</h4>
+              <p>Orthopedic Surgeon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /section 3 -->
+
+    <!-- section 4 -->
+    <section class="specialties py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Specialties <span>We Cover</span></h2>
+        <p class="section-subtitle mb-5">
+          We offer a wide range of medical services led by expert specialists.
+        </p>
+
+        <div class="row g-4">
+          <!-- Specialty 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="specialty-card">
+              <div class="icon">🫀</div>
+              <h5>Cardiology</h5>
+              <p>Heart health & diagnostics</p>
+            </div>
+          </div>
+          <!-- Specialty 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="specialty-card">
+              <div class="icon">🧠</div>
+              <h5>Neurology</h5>
+              <p>Brain & nervous system</p>
+            </div>
+          </div>
+          <!-- Specialty 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="specialty-card">
+              <div class="icon">🦴</div>
+              <h5>Orthopedics</h5>
+              <p>Bone & joint treatments</p>
+            </div>
+          </div>
+          <!-- Specialty 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="specialty-card">
+              <div class="icon">👶</div>
+              <h5>Pediatrics</h5>
+              <p>Child health & wellness</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /section 4 -->
+
+    <!-- section 5 -->
+    <section class="testimonials py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">What <span>Patients Say</span></h2>
+        <p class="section-subtitle mb-5">
+          Real experiences from people we’ve had the honor to care for.
+        </p>
+
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <p>
+                "HealthCare saved my life. The doctors were incredibly attentive
+                and supportive through my recovery."
+              </p>
+              <h6>- Sarah Malik</h6>
+              <small>Recovered from heart surgery</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <p>
+                "The staff treated my child with such care and love. It felt
+                like family. Thank you, HealthCare"
+              </p>
+              <h6>- Ahmed Khan</h6>
+              <small>Father of pediatric patient</small>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="testimonial-card">
+              <p>
+                "Amazing experience! From diagnosis to treatment, the entire
+                process was smooth and professional."
+              </p>
+              <h6>- Rina Das</h6>
+              <small>General consultation</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /section 5 -->
+
+    <!-- section 6 -->
+    <section class="blog py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Health Tips & <span>Articles</span></h2>
+        <p class="section-subtitle mb-5">
+          Stay informed with the latest advice and news from our medical
+          experts.
+        </p>
+
+        <div class="row g-4">
+          <!-- Blog Post 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <img
+                src="https://img.freepik.com/free-photo/doctor-talking-patient-hospital-room_23-2149284875.jpg?w=740"
+                alt="Article 1"
+              />
+              <div class="blog-content">
+                <h5>5 Ways to Keep Your Heart Healthy</h5>
+                <p>
+                  Simple lifestyle changes you can make today to protect your
+                  cardiovascular health.
+                </p>
+                <a href="#">Read More →</a>
               </div>
-            
-              <button type="submit" class="patient-form-submit-btn">Register</button>
-            </form>
-            
+            </div>
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <img
+                src="https://img.freepik.com/free-photo/nutritionist-presenting-healthy-diet-plan_23-2148740539.jpg?w=740"
+                alt="Article 2"
+              />
+              <div class="blog-content">
+                <h5>Nutrition Tips for Strong Immunity</h5>
+                <p>
+                  Boost your immune system with these doctor-recommended dietary
+                  tips.
+                </p>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <img
+                src="https://img.freepik.com/free-photo/woman-practicing-yoga-home_23-2149100766.jpg?w=740"
+                alt="Article 3"
+              />
+              <div class="blog-content">
+                <h5>Managing Stress Through Mindfulness</h5>
+                <p>
+                  How meditation and breathing exercises can support your mental
+                  health.
+                </p>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /section 6 -->
+
+    <!-- section 7 -->
+    <section class="emergency-contact py-5 text-white">
+      <div class="container text-center">
+        <h2 class="section-title mb-3">
+          Need Help? <span>Emergency Contact</span>
+        </h2>
+        <p class="section-subtitle mb-4">
+          In case of medical emergencies, don’t wait. Call us immediately for
+          quick assistance and support.
+        </p>
+
+        <div class="contact-box mx-auto">
+          <h3 class="mb-3">📞 24/7 Emergency Hotline</h3>
+          <a href="tel:+911234567890" class="emergency-number"
+            >+91 12345 67890</a
+          >
+          <p class="mt-3">
+            Or visit our Emergency Department directly – we’re always ready to
+            help you.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /section 7 -->
+
+    <!-- section 8 -->
+    <section class="join-us py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-4">Join <span>Our Network</span></h2>
+        <p class="section-subtitle mb-5">
+          Are you a doctor or a healthcare facility? Partner with us to deliver
+          high-quality care and reach more patients.
+        </p>
+
+        <div class="row justify-content-center g-4">
+          <!-- Doctor Join Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="join-card">
+              <img
+                src="https://img.freepik.com/free-photo/doctor-wearing-stethoscope_23-2148819622.jpg?w=740"
+                alt="Join as Doctor"
+              />
+              <h5 class="mt-3">Join as a Doctor</h5>
+              <p>
+                Grow your practice and connect with more patients by joining our
+                platform.
+              </p>
+              <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+          </div>
+
+          <!-- Hospital Join Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="join-card">
+              <img
+                src="https://img.freepik.com/free-photo/hospital-building-modern-architecture_23-2149329179.jpg?w=740"
+                alt="Join as Hospital"
+              />
+              <h5 class="mt-3">Join as a Hospital</h5>
+              <p>
+                Expand your reach and improve services with our network support
+                and tools.
+              </p>
+              <a href="#" class="btn btn-outline-primary">Partner With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /section 8 -->
+
+    <!-- footer     -->
+    <footer>
+      <div class="footer-container">
+        <!-- About & Social -->
+        <div class="footer-column">
+          <h4>HealthCare</h4>
+          <p>Your health, our priority. Quality care for everyone, always.</p>
+          <p>Accredited by NABH | 24/7 Emergency | 500+ Beds</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="#">Lab & Diagnostics</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Patient Resources -->
+        <div class="footer-column">
+          <h4>Patient Resources</h4>
+          <ul>
+            <li><a href="#">Book Appointment</a></li>
+            <li><a href="#">Health Packages</a></li>
+            <li><a href="#">Insurance Partners</a></li>
+            <li><a href="#">Patient Stories</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column">
+          <h4>Stay Connected</h4>
+          <p>Subscribe to our newsletter for health tips and updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
+      </div>
+    </footer>
+    <!-- /footer     -->
+
+    <!-- ================/modal=================== -->
+
+    <div
+      class="modal fade"
+      id="registerModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header w-100 d-flex justify-content-center">
+            <h1
+              class="modal-title fs-3 text-center mx-auto"
+              id="registerModalLabel"
+            >
+              Register As
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div
+            class="modal-body d-flex flex-wrap justify-content-evenly gap-3w"
+          >
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">User</h4>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  class="btn btn-warning"
+                >
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i class="fa-solid fa-user-doctor fa-3x text-warning"></i>
+                </h5>
+                <h4 class="card-text">Doctor</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body text-center">
+                <h5 class="card-title">
+                  <i
+                    class="fa-solid fa-house-medical-circle-check fa-3x text-warning"
+                  ></i>
+                </h5>
+                <h4 class="card-text">Hospital</h4>
+                <button type="button" class="btn btn-warning">
+                  Register Now
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-  <script src="assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
+    <!-- doctor-form-modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="
+              position: sticky;
+              top: 0 !important;
+              z-index: 1;
+              background-color: #fff;
+              width: 466px;
+            "
+          >
+            <h2 class="form-title">Patient Registration Form</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container patient-form-body">
+              <div class="patient-form-left-panel">
+                <div class="patient-form-logo">🩺</div>
+                <h2>Welcome</h2>
+                <p>You are 30 seconds away from booking your appointment!</p>
+              </div>
 
+              <div class="patient-form-right-panel">
+                <h2>Patient Registration Form</h2>
+                <form id="patient-form-registration-form">
+                  <div class="patient-form-grid">
+                    <div class="patient-form-group">
+                      <label for="full-name">Full Name *</label>
+                      <input
+                        type="text"
+                        id="patient-form-full-name"
+                        placeholder="e.g. John Doe"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="email">Email Address *</label>
+                      <input
+                        type="email"
+                        id="patient-form-email"
+                        placeholder="e.g. john.doe@example.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="dob">Date of Birth *</label>
+                      <input type="date" id="patient-form-dob" required />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="phone">Phone Number *</label>
+                      <input
+                        type="tel"
+                        id="patient-form-phone"
+                        placeholder="e.g. 9876543210"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="gender">Gender *</label>
+                      <select id="patient-form-gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="state">State *</label>
+                      <input
+                        list="state-list"
+                        id="patient-form-state"
+                        placeholder="e.g. Maharashtra"
+                        required
+                      />
+                      <!-- Datalist added earlier -->
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="city">City *</label>
+                      <input
+                        type="text"
+                        id="patient-form-city"
+                        placeholder="e.g. Pune"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="zip">ZIP / Pin Code *</label>
+                      <input
+                        type="text"
+                        id="patient-form-zip"
+                        placeholder="e.g. 411001"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="relation">Relation to Patient *</label>
+                      <input
+                        type="text"
+                        id="patient-form-relation"
+                        placeholder="e.g. Self, Son, Daughter"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-doctor"
+                        >Preferred Doctor (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-preferred-doctor"
+                        placeholder="e.g. Dr. A. Sharma"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="preferred-date"
+                        >Preferred Date for Checkup *</label
+                      >
+                      <input
+                        type="date"
+                        id="patient-form-preferred-date"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="aadhar">Aadhar Card Number *</label>
+                      <input
+                        type="text"
+                        id="patient-form-aadhar"
+                        placeholder="e.g. 1234 5678 9012"
+                        required
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="symptoms"
+                        >Symptoms / Medical Condition *</label
+                      >
+                      <textarea
+                        id="patient-form-symptoms"
+                        rows="2"
+                        placeholder="e.g. Fever, cough, fatigue for past 3 days"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="medical-reports"
+                        >Previous Medical Reports (Optional)</label
+                      >
+                      <input
+                        type="file"
+                        id="patient-form-medical-reports"
+                        title="Upload any previous medical reports"
+                      />
+                    </div>
+
+                    <div class="patient-form-group">
+                      <label for="previous-doctors"
+                        >Previous Doctors (Optional)</label
+                      >
+                      <input
+                        type="text"
+                        id="patient-form-previous-doctors"
+                        placeholder="e.g. Dr. Patel, Dr. Sinha"
+                      />
+                    </div>
+                  </div>
+
+                  <button type="submit" class="patient-form-submit-btn">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================/modal=================== -->
+
+    <script src="assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

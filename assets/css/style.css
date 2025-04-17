@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--light);
   color: #333;
 }
@@ -37,8 +37,6 @@ p {
   color: #b0b8c1;
   margin: 1rem 0 2rem;
 }
-
-
 
 /*===========================
     Navbar
@@ -84,9 +82,7 @@ p {
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-
 }
-
 
 .nav-links a {
   color: var(--text-light);
@@ -199,7 +195,7 @@ p {
     text-align: left;
   }
 
-  #menu-toggle:checked+.hamburger+.nav-links {
+  #menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
   }
 
@@ -216,6 +212,121 @@ p {
   }
 }
 
+/* ==================modal===================== */
+/* Patient-form */
+
+.patient-form-body {
+  background: #fff;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.patient-form-left-panel {
+  background: linear-gradient(to bottom right, #4f0fcf, #4361ee);
+  color: white;
+  flex: 1;
+  min-width: 280px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.patient-form-left-panel .patient-form-logo {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.patient-form-left-panel h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.patient-form-left-panel p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.patient-form-right-panel {
+  flex: 2;
+  padding: 40px;
+}
+
+.patient-form-right-panel h2 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.patient-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4361ee;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.patient-form-submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.patient-form-submit-btn:hover {
+  background: linear-gradient(to right, #005bea, #00c6fb);
+}
+
+@media (max-width: 768px) {
+  .patient-form-container {
+    flex-direction: column;
+  }
+
+  .patient-form-left-panel {
+    padding: 30px;
+  }
+
+  .patient-form-right-panel {
+    padding: 30px 20px;
+  }
+}
+
+/* /Patient-form */
+/*========================= / modal====================== */
 
 /* -------------------home page css------------------- */
 /* section 1 -------------------*/
@@ -284,7 +395,6 @@ p {
 
 /* /section 1 -------------------*/
 
-
 /* section 2 -------------------*/
 .why-choose-us {
   background-color: #182438;
@@ -337,7 +447,6 @@ p {
 }
 
 /* /section 2 -------------------*/
-
 
 /* section 3 -------------------*/
 .top-doctors {
@@ -394,7 +503,6 @@ p {
 
 /* /section 3 -------------------*/
 
-
 /* section 4 -------------------*/
 .specialties {
   background-color: var(--dark);
@@ -447,7 +555,6 @@ p {
 
 /* /section 4 -------------------*/
 
-
 /* section 5 -------------------*/
 .testimonials {
   background-color: var(--light);
@@ -499,7 +606,6 @@ p {
 }
 
 /* /section 5 -------------------*/
-
 
 /* section 6 -------------------*/
 .blog {
@@ -572,7 +678,6 @@ p {
 
 /* /section 6 -------------------*/
 
-
 /* section 7 -------------------*/
 .emergency-contact {
   background-color: var(--bg-dark) !important;
@@ -615,7 +720,6 @@ p {
 }
 
 /* /section 7 -------------------*/
-
 
 /* section 8 -------------------*/
 .join-us {
@@ -673,7 +777,6 @@ p {
 /* /section 8 -------------------*/
 
 /* =================== / home page ================ */
-
 
 /* =================== about page ================ */
 /* ================= WHO SECTION ================== */
@@ -873,7 +976,10 @@ p {
 /* Grid layout for offer cards */
 .offer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(260px, 1fr)
+  ); /* Responsive grid */
   gap: 2rem;
 }
 
@@ -1197,7 +1303,7 @@ p {
 .our-journey {
   padding: 4rem 1rem;
   background-color: #f9fafc;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title {
@@ -1270,7 +1376,7 @@ p {
 .faq-section {
   padding: 4rem 1rem;
   background-color: var(--dark);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .faq-section .container {
@@ -1313,7 +1419,7 @@ p {
 
 /* Plus/minus toggle indicator */
 .faq-question::after {
-  content: '+';
+  content: "+";
   position: absolute;
   right: 0;
   font-size: 1.5rem;
@@ -1326,8 +1432,8 @@ p {
 }
 
 /* Change to minus when expanded */
-.faq-item input[type="checkbox"]:checked+.faq-question::after {
-  content: '-';
+.faq-item input[type="checkbox"]:checked + .faq-question::after {
+  content: "-";
   transform: rotate(180deg);
 }
 
@@ -1342,7 +1448,7 @@ p {
 }
 
 /* Expand answer when checked */
-.faq-item input[type="checkbox"]:checked~.faq-answer {
+.faq-item input[type="checkbox"]:checked ~ .faq-answer {
   max-height: 200px;
   margin-top: 0.5rem;
 }
@@ -1352,7 +1458,7 @@ p {
 .contact-section {
   padding: 4rem 1rem;
   background-color: var(--light);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--dark);
 }
 
@@ -1420,7 +1526,7 @@ p {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -1478,7 +1584,6 @@ p {
   }
 }
 /* =================== /about page ================ */
-
 
 /*=========================== Stories and Blog Section ===========================*/
 .stories-section {
@@ -1587,7 +1692,6 @@ p {
   ===========================*/
 /*=========================== / Stories and Blog Section  ===========================*/
 
-
 /*=========================== Doctor Section  ===========================*/
 .page-section {
   padding: 4rem 1rem;
@@ -1694,32 +1798,24 @@ p {
   .container {
     padding: 0 0.5rem;
   }
-  
+
   .page-grid {
     grid-template-columns: 1fr;
     /* force single column layout */
     gap: 1rem;
   }
-  
+
   .page-card {
     width: 100%;
     margin: 0 auto;
     /* center the card */
   }
-  
+
   .pagination a {
     margin: 0.3rem;
   }
 }
 /*=========================== / Doctor Section  ===========================*/
-
-
-
-
-
-
-
-
 
 /*=========================== Footer Section  ===========================*/
 footer {
@@ -1841,15 +1937,15 @@ footer {
     text-align: center;
     gap: 2rem;
   }
-  
+
   .footer-social {
     justify-content: center;
   }
-  
+
   .newsletter-form {
     align-items: center;
   }
-  
+
   .newsletter-form input,
   .newsletter-form button {
     width: 100%;
