@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Basic Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Page Title -->
-    <title>Story's Page – LifeLine Hospital</title>
-
-    <!-- Google Fonts: Poppins -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="../assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/fontawesome-free-6.7.2-web/all.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- Header / Navigation Bar -->
+    <!-- navbar -->
     <header class="main-navbar">
       <div class="container navbar-wrapper">
-        <!-- Brand Logo -->
         <div class="logo">Health<span>Care</span></div>
 
-        <!-- Hamburger Icon for Mobile -->
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="hamburger">&#9776;</label>
 
-        <!-- Navigation Links -->
         <nav class="nav-links">
           <a href="../index.html">Home</a>
           <a href="./about.html">About</a>
@@ -40,10 +38,8 @@
           <a href="#">Customer Support</a>
           <!-- ✅ New menu item added -->
 
-          <!-- Extra Navigation Items -->
           <div class="nav-extras">
-            <!-- Login and Signup Buttons -->
-            <!-- <button class="btn signup">Sign Up</button> -->
+            <!-- <button class="btn signup" id="signupbtn">Sign Up</button> -->
             <button
               type="button"
               id="signupbtn"
@@ -53,45 +49,37 @@
             >
               Sign Up
             </button>
-
-            <!-- Language Selector -->
             <!-- <select class="lang-switcher" aria-label="Language Switcher">
-              <option value="en">EN</option>
-              <option value="hi">हिंदी</option>
-              <option value="ar">عربي</option>
-            </select> -->
-
-            <!-- Dark Mode Toggle -->
-            <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
-              🌙
-            </button>
+            <option value="en">EN</option>
+            <option value="hi">हिंदी</option>
+            <option value="ar">عربي</option>
+          </select> -->
+            <button class="dark-mode-toggle">🌙</button>
           </div>
         </nav>
       </div>
     </header>
+    <!-- /navbar -->
 
-    <!-- Patient Stories Section -->
-    <section class="stories-section">
-      <div class="container">
-        <!-- Section Heading -->
-        <h2 class="section-title">Blog Page</h2>
-        <p class="section-subtitle">
-          Read inspiring patient stories and news from LifeLine Hospital.
-        </p>
-
-        <!-- Stories Grid -->
-        <div class="page-grid"></div>
-
-        <!-- Pagination -->
-        <div class="pagination">
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Next »</a>
+    <section class="page-section">
+        <div class="container">
+          <h2 class="section-title">Blog Page</h2>
+          <p class="section-subtitle">
+            Get details of best and professional Doctors from Health Care.
+          </p>
+  
+          <div class="page-grid"></div>
+  
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next »</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+    <!-- footer     -->
     <footer>
       <div class="footer-container">
         <!-- About & Social -->
@@ -146,6 +134,7 @@
         &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
       </div>
     </footer>
+    <!-- /footer     -->
 
     <!-- ================/modal=================== -->
 
@@ -428,6 +417,9 @@
       </div>
     </div>
     <!-- ================/modal=================== -->
+
+    <script src="../assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

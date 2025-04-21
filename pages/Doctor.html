@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Our Doctors – Health Care</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="../assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/fontawesome-free-6.7.2-web/all.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <!-- navbar -->
     <header class="main-navbar">
       <div class="container navbar-wrapper">
         <div class="logo">Health<span>Care</span></div>
@@ -31,7 +39,7 @@
           <!-- ✅ New menu item added -->
 
           <div class="nav-extras">
-            <!-- <button class="btn signup">Sign Up</button> -->
+            <!-- <button class="btn signup" id="signupbtn">Sign Up</button> -->
             <button
               type="button"
               id="signupbtn"
@@ -41,37 +49,37 @@
             >
               Sign Up
             </button>
-
-            <!-- <select class="lang-switcher">
-              <option value="en">EN</option>
-              <option value="hi">हिंदी</option>
-              <option value="ar">عربي</option>
-            </select> -->
-
+            <!-- <select class="lang-switcher" aria-label="Language Switcher">
+            <option value="en">EN</option>
+            <option value="hi">हिंदी</option>
+            <option value="ar">عربي</option>
+          </select> -->
             <button class="dark-mode-toggle">🌙</button>
           </div>
         </nav>
       </div>
     </header>
+    <!-- /navbar -->
 
     <section class="page-section">
-      <div class="container">
-        <h2 class="section-title">Our Doctors</h2>
-        <p class="section-subtitle">
-          Get details of best and professional Doctors from Health Care.
-        </p>
-
-        <div class="page-grid"></div>
-
-        <div class="pagination">
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Next »</a>
+        <div class="container">
+          <h2 class="section-title">Our Doctors</h2>
+          <p class="section-subtitle">
+            Get details of best and professional Doctors from Health Care.
+          </p>
+  
+          <div class="page-grid"></div>
+  
+          <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next »</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+    <!-- footer     -->
     <footer>
       <div class="footer-container">
         <!-- About & Social -->
@@ -126,6 +134,7 @@
         &copy; 2025 HealthCare. All Rights Reserved. | Designed by Tips G Alwar
       </div>
     </footer>
+    <!-- /footer     -->
 
     <!-- ================/modal=================== -->
 
@@ -409,6 +418,8 @@
     </div>
     <!-- ================/modal=================== -->
 
+    <script src="../assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
     <script src="../assets/js/script.js"></script>
   </body>
 </html>

@@ -1692,130 +1692,130 @@ textarea {
   ===========================*/
 /*=========================== / Stories and Blog Section  ===========================*/
 
-/*=========================== Doctor Section  ===========================*/
-.page-section {
-  padding: 4rem 1rem;
-}
+  /*=========================== Doctor Section  ===========================*/
+  .page-section {
+    padding: 4rem 1rem;
+  }
 
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
 
-.section-subtitle {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 3rem;
-}
-
-.page-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.page-card {
-  background: var(--text-light);
-  border-radius: var(--radius);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.page-card:hover {
-  transform: translateY(-5px);
-}
-
-.page-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-.page-info {
-  padding: 1.5rem;
-}
-
-.page-name {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--bg-dark);
-  margin-bottom: 0.3rem;
-}
-
-.page-experience,
-.page-specialty {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.know-more {
-  display: inline-block;
-  background-color: var(--primary);
-  color: var(--text-light);
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-  margin-top: 0.5rem;
-}
-
-.know-more:hover {
-  background-color: #d69e00;
-}
-
-.pagination {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.pagination a {
-  display: inline-block;
-  margin: 0 0.3rem;
-  padding: 0.5rem 1rem;
-  color: var(--bg-dark);
-  background-color: #eee;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.pagination a.active {
-  background-color: var(--primary);
-  color: var(--text-light);
-}
-
-.pagination a:hover {
-  background-color: #ddd;
-}
-
-@media screen and (max-width: 350px) {
-  .container {
-    padding: 0 0.5rem;
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
   }
 
   .page-grid {
-    grid-template-columns: 1fr;
-    /* force single column layout */
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
   }
 
   .page-card {
+    background: var(--text-light);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .page-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .page-img {
     width: 100%;
-    margin: 0 auto;
-    /* center the card */
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .page-info {
+    padding: 1.5rem;
+  }
+
+  .page-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--bg-dark);
+    margin-bottom: 0.3rem;
+  }
+
+  .page-experience,
+  .page-specialty {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+
+  .know-more {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 0.5rem;
+  }
+
+  .know-more:hover {
+    background-color: #d69e00;
+  }
+
+  .pagination {
+    text-align: center;
+    margin-top: 3rem;
   }
 
   .pagination a {
-    margin: 0.3rem;
+    display: inline-block;
+    margin: 0 0.3rem;
+    padding: 0.5rem 1rem;
+    color: var(--bg-dark);
+    background-color: #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
   }
-}
-/*=========================== / Doctor Section  ===========================*/
+
+  .pagination a.active {
+    background-color: var(--primary);
+    color: var(--text-light);
+  }
+
+  .pagination a:hover {
+    background-color: #ddd;
+  }
+
+  @media screen and (max-width: 350px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+
+    .page-grid {
+      grid-template-columns: 1fr;
+      /* force single column layout */
+      gap: 1rem;
+    }
+
+    .page-card {
+      width: 100%;
+      margin: 0 auto;
+      /* center the card */
+    }
+
+    .pagination a {
+      margin: 0.3rem;
+    }
+  }
+  /*=========================== / Doctor Section  ===========================*/
 
 /*=========================== Footer Section  ===========================*/
 footer {
