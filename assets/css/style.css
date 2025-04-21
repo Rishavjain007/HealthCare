@@ -1661,12 +1661,12 @@ textarea {
 /*===========================
     Pagination
   ===========================*/
-.pagination {
+.story-pagination {
   text-align: center;
   margin-top: 3rem;
 }
 
-.pagination a {
+.story-pagination a {
   display: inline-block;
   margin: 0 0.3rem;
   padding: 0.5rem 1rem;
@@ -1678,12 +1678,12 @@ textarea {
   transition: background-color var(--transition);
 }
 
-.pagination a.active {
+.story-pagination a.active {
   background-color: var(--primary);
   color: var(--white);
 }
 
-.pagination a:hover {
+.story-pagination a:hover {
   background-color: #ddd;
 }
 
@@ -1769,12 +1769,12 @@ textarea {
     background-color: #d69e00;
   }
 
-  .pagination {
+  .doctor-pagination {
     text-align: center;
     margin-top: 3rem;
   }
 
-  .pagination a {
+  .doctor-pagination a {
     display: inline-block;
     margin: 0 0.3rem;
     padding: 0.5rem 1rem;
@@ -1785,12 +1785,12 @@ textarea {
     font-weight: 600;
   }
 
-  .pagination a.active {
+  .doctor-pagination a.active {
     background-color: var(--primary);
     color: var(--text-light);
   }
 
-  .pagination a:hover {
+  .doctor-pagination a:hover {
     background-color: #ddd;
   }
 
@@ -1811,7 +1811,7 @@ textarea {
       /* center the card */
     }
 
-    .pagination a {
+    .doctor-pagination a {
       margin: 0.3rem;
     }
   }

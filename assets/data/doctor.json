@@ -35,6 +35,150 @@
           "name": "Dr. Sameer Verma",
           "experience": "11 Years",
           "specialty": "Gastroenterology"
-        }
+        },
+        {
+          "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+          "name": "Dr. Ayesha Rahman",
+          "experience": "12 Years",
+          "specialty": "Cardiology"
+      },
+      {
+          "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+          "name": "Dr. Arjun Mehta",
+          "experience": "9 Years",
+          "specialty": "Neurology"
+      },
+      {
+          "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+          "name": "Dr. Meera Sharma",
+          "experience": "8 Years",
+          "specialty": "Pediatrics"
+      },
+      {
+        "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+        "name": "Dr. Karan Bhatt",
+        "experience": "10 Years",
+        "specialty": "Orthopedics"
+      },
+      {
+        "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+        "name": "Dr. Riya Patel",
+        "experience": "6 Years",
+        "specialty": "Dermatology"
+      },
+      {
+        "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+        "name": "Dr. Sameer Verma",
+        "experience": "11 Years",
+        "specialty": "Gastroenterology"
+      },
+      {
+        "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+        "name": "Dr. Ayesha Rahman",
+        "experience": "12 Years",
+        "specialty": "Cardiology"
+    },
+    {
+        "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+        "name": "Dr. Arjun Mehta",
+        "experience": "9 Years",
+        "specialty": "Neurology"
+    },
+    {
+        "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+        "name": "Dr. Meera Sharma",
+        "experience": "8 Years",
+        "specialty": "Pediatrics"
+    },
+    {
+      "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+      "name": "Dr. Karan Bhatt",
+      "experience": "10 Years",
+      "specialty": "Orthopedics"
+    },
+    {
+      "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+      "name": "Dr. Riya Patel",
+      "experience": "6 Years",
+      "specialty": "Dermatology"
+    },
+    {
+      "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+      "name": "Dr. Sameer Verma",
+      "experience": "11 Years",
+      "specialty": "Gastroenterology"
+    },
+    {
+      "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+      "name": "Dr. Ayesha Rahman",
+      "experience": "12 Years",
+      "specialty": "Cardiology"
+  },
+  {
+      "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+      "name": "Dr. Arjun Mehta",
+      "experience": "9 Years",
+      "specialty": "Neurology"
+  },
+  {
+      "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+      "name": "Dr. Meera Sharma",
+      "experience": "8 Years",
+      "specialty": "Pediatrics"
+  },
+  {
+    "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+    "name": "Dr. Karan Bhatt",
+    "experience": "10 Years",
+    "specialty": "Orthopedics"
+  },
+  {
+    "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+    "name": "Dr. Riya Patel",
+    "experience": "6 Years",
+    "specialty": "Dermatology"
+  },
+  {
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+    "name": "Dr. Sameer Verma",
+    "experience": "11 Years",
+    "specialty": "Gastroenterology"
+  },
+  {
+    "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+    "name": "Dr. Ayesha Rahman",
+    "experience": "12 Years",
+    "specialty": "Cardiology"
+},
+{
+    "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+    "name": "Dr. Arjun Mehta13245",
+    "experience": "9 Years",
+    "specialty": "Neurology"
+},
+{
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+    "name": "Dr. Meera Sharma12341",
+    "experience": "8 Years",
+    "specialty": "Pediatrics"
+},
+{
+  "image": "https://i0.wp.com/www.img-nova-scotia.ca/wp-content/uploads/2022/05/team-young-specialist-doctors-standing-corridor-hospital-m.jpg?resize=960%2C640&ssl=1",
+  "name": "Dr. Karan Bhatt1324",
+  "experience": "10 Years",
+  "specialty": "Orthopedics"
+},
+{
+  "image": "https://akm-img-a-in.tosshub.com/sites/resources/campus/prod/img/career/2023/7/surgery18075416401131744823128.jpg?size=624:351",
+  "name": "Dr. Riya Patel123",
+  "experience": "6 Years",
+  "specialty": "Dermatology"
+},
+{
+  "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-08/26/full/1724663217-1185.jpg?im=FitAndFill=(826,465)",
+  "name": "Dr. Sameer Verma13",
+  "experience": "11 Years",
+  "specialty": "Gastroenterology"
+}
     ]
 }
