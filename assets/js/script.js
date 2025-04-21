@@ -1,12 +1,12 @@
 // Global doctor pagination
 let allDoctorData = [];
 let currentPage = 1;
-const itemsPerPage = 3;
+const itemsPerPage = 9;
 
 // Global story pagination
 let allStoryData = [];
 let currentStoryPage = 1;
-const storyItemsPerPage = 3; // Adjust as needed
+const storyItemsPerPage = 9; // Adjust as needed
 
 // Fetch and render doctor data
 async function fetchDoctorData() {
