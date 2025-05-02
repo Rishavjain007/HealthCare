@@ -10,12 +10,18 @@
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css"
+      href="./assets/vendor/bootstrap-5.3.5-dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
-      href="assets/vendor/fontawesome-free-6.7.2-web/all.css"
+      href="./assets/vendor/fontawesome-free-6.7.2-web/css/all.css"
       rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./assets/image/health logo (1).svg"
+      type="image/png"
+      sizes="64x64"
     />
   </head>
 
@@ -23,7 +29,14 @@
     <!-- navbar -->
     <header class="main-navbar">
       <div class="container navbar-wrapper">
-        <div class="logo">Health<span>Care</span></div>
+        <div class="logo">
+          <!-- Health<span>Care</span> -->
+          <img
+            src="./assets/image/output-onlinepngtools.png"
+            alt=""
+            class="logo-img"
+          />
+        </div>
 
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -34,11 +47,28 @@
           <a href="./pages/Doctor.html">Doctors</a>
           <a href="./pages/story.html">Stories</a>
           <a href="./pages/blog.html">Blog</a>
-          <a href="#">Emergency</a>
-          <a href="#">Customer Support</a>
+          <div class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-menu">
+              <a href="#">24x7 Emergency Services</a>
+              <a href="#">24x7 Ambulance Services</a>
+              <a href="#">24x7 Medical Store</a>
+              <a href="#">Intensive Care Unit</a>
+              <a href="#">Modular Operation Theatre</a>
+              <a href="#">Neonatal Intensive Care Unit</a>
+              <a href="#">Sonography and Ultrasound</a>
+              <a href="#">General & Super Deluxe Ward</a>
+              <a href="#">Dialysis</a>
+              <a href="#">Digital X-Ray</a>
+              <a href="#">Laboratory</a>
+              <a href="#">Canteen</a>
+            </div>
+          </div>
+
+          <a href="./pages/Contact.html">Contact & Support</a>
           <!-- ✅ New menu item added -->
 
-          <div class="nav-extras">
+          <div class="nav-extras" id="nav-extras">
             <!-- <button class="btn signup" id="signupbtn">Sign Up</button> -->
             <button
               type="button"
@@ -49,43 +79,37 @@
             >
               Sign Up
             </button>
+            <div id="btn-container"></div>
+            <button
+              type="button"
+              id="loginbtn"
+              class="btn login"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+            >
+              Log In
+            </button>
             <!-- <select class="lang-switcher" aria-label="Language Switcher">
             <option value="en">EN</option>
             <option value="hi">हिंदी</option>
             <option value="ar">عربي</option>
           </select> -->
-            <!-- <button class="dark-mode-toggle">🌙</button> -->
-            <!-- From Uiverse.io by JkHuger -->
-            <label for="theme" class="theme">
-              <span class="theme__toggle-wrap">
-                <input
-                  id="theme"
-                  class="theme__toggle"
-                  type="checkbox"
-                  role="switch"
-                  name="theme"
-                  value="dark"
-                />
-                <span class="theme__fill"></span>
-                <span class="theme__icon">
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                  <span class="theme__icon-part"></span>
-                </span>
-              </span>
-            </label>
+            <div class="theme">
+              <input type="checkbox" id="theme" class="theme__toggle" />
+              <label for="theme" class="theme__label">
+                <span class="theme__icon theme__icon--sun"
+                  ><i class="fas fa-sun"></i
+                ></span>
+                <span class="theme__icon theme__icon--moon"
+                  ><i class="fas fa-moon"></i
+                ></span>
+              </label>
+            </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- /navbar -->
-
     <!-- section 1 -->
     <div class="container">
       <div class="row">
@@ -188,50 +212,34 @@
     <!-- /section 2 -->
 
     <!-- section 3 -->
-    <section class="top-doctors py-5">
-      <div class="container text-center">
-        <h2 class="section-title mb-4">Meet Our <span>Top Doctors</span></h2>
-        <p class="section-subtitle mb-5">
+    <section class="page-section" style="height: 650px; overflow: hidden; margin-bottom: 3%;">
+      <div class="container">
+        <h2 class="section-title">Meet Our Doctors</h2>
+        <p class="section-subtitle">
           Handpicked specialists committed to your health and wellbeing.
         </p>
+        <div class="controls">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by doctor name..."
+          />
+          <select id="specialtyFilter">
+            <option value="">All Specialties</option>
+          </select>
+        </div>
 
-        <div class="row g-4">
-          <!-- Doctor 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="doctor-card">
-              <img
-                src="https://img.freepik.com/free-photo/portrait-doctor_144627-39389.jpg?w=740"
-                alt="Dr. John Smith"
-                class="doctor-img"
-              />
-              <h4>Dr. John Smith</h4>
-              <p>Cardiologist</p>
-            </div>
-          </div>
-          <!-- Doctor 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="doctor-card">
-              <img
-                src="https://img.freepik.com/free-photo/female-doctor-wearing-coat-with-stethoscope-isolated_1303-29724.jpg?w=740"
-                alt="Dr. Lisa Ray"
-                class="doctor-img"
-              />
-              <h4>Dr. Lisa Ray</h4>
-              <p>Pediatrician</p>
-            </div>
-          </div>
-          <!-- Doctor 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="doctor-card">
-              <img
-                src="https://img.freepik.com/free-photo/portrait-doctor-smiling-hospital_1303-20642.jpg?w=740"
-                alt="Dr. Mark Lee"
-                class="doctor-img"
-              />
-              <h4>Dr. Mark Lee</h4>
-              <p>Orthopedic Surgeon</p>
-            </div>
-          </div>
+        <!-- <div class="page-grid"></div> -->
+        <div id="doctorCards" class="doctor-page-card-container"></div>
+        <div class="doctor-page-card-container">
+          
+        </div>
+
+
+        <div class="doctor-pagination">
+          <a href="#" id="prevBtn">Previous</a>
+          <a href="#" id="pageInfo">1</a>
+          <a href="#" id="nextBtn">Next »</a>
         </div>
       </div>
     </section>
@@ -447,7 +455,7 @@
                 Grow your practice and connect with more patients by joining our
                 platform.
               </p>
-              <a href="#" class="btn btn-primary">Register Now</a>
+              <a href="#" class="btn primary">Register Now</a>
             </div>
           </div>
 
@@ -463,7 +471,7 @@
                 Expand your reach and improve services with our network support
                 and tools.
               </p>
-              <a href="#" class="btn btn-outline-primary">Partner With Us</a>
+              <a href="#" class="btn primary">Partner With Us</a>
             </div>
           </div>
         </div>
@@ -519,7 +527,7 @@
           <p>Subscribe to our newsletter for health tips and updates.</p>
           <form class="newsletter-form">
             <input type="email" placeholder="Enter your email" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="btn primary">Subscribe</button>
           </form>
         </div>
       </div>
@@ -542,19 +550,22 @@
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header w-100 d-flex justify-content-center">
-            <h1 class="modal-title fs-3 text-center" id="registerModalLabel">
+            <h1
+              class="modal-title fs-3 text-center mx-auto"
+              id="registerModalLabel"
+            >
               Register As
             </h1>
             <button
               type="button"
-              class="btn-close"
+              class="btn-close ms-0"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
 
           <div
-            class="modal-body d-flex flex-wrap justify-content-evenly gap-3w"
+            class="modal-body d-flex flex-wrap justify-content-evenly gap-3w py-5"
           >
             <div class="card" style="width: 18rem">
               <div class="card-body text-center">
@@ -612,8 +623,7 @@
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
@@ -628,293 +638,15 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="container form-container">
-              <form>
-                <h2 class="form-title">Doctors Registration Form</h2>
-
-                <div class="form-section-title">Basic Information</div>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="name" class="form-label">Full Name</label>
-                    <input
-                      class="form-control"
-                      type="text"
-                      name="name"
-                      id="name"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-2 mb-3">
-                    <label for="age" class="form-label">Age</label>
-                    <input
-                      class="form-control"
-                      type="number"
-                      name="age"
-                      id="age"
-                      min="21"
-                      max="100"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <label for="gender" class="form-label">Gender</label>
-                    <select
-                      class="form-select"
-                      name="gender"
-                      id="gender"
-                      required
-                    >
-                      <option disabled selected>Select your gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                      <option value="other">Other</option>
-                      <option value="prefer_not_say">Prefer not to say</option>
-                    </select>
-                  </div>
-                </div>
-
-                <label for="bio" class="form-label">Bio</label>
-                <textarea
-                  id="bio"
-                  name="bio"
-                  class="form-control"
-                  rows="3"
-                  required
-                ></textarea>
-
-                <div class="form-section-title">Location Details</div>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="state" class="form-label">State</label>
-                    <input
-                      list="state-list"
-                      id="state"
-                      name="state"
-                      class="form-control"
-                      required
-                    />
-                    <datalist id="state-list">
-                      <option value="Andaman and Nicobar Islands"></option>
-                      <option value="Andhra Pradesh"></option>
-                      <option value="Arunachal Pradesh"></option>
-                      <option value="Assam"></option>
-                      <option value="Bihar"></option>
-                      <option value="Chandigarh"></option>
-                      <option value="Chhattisgarh"></option>
-                      <option
-                        value="Dadra and Nagar Haveli and Daman and Diu"
-                      ></option>
-                      <option value="Delhi"></option>
-                      <option value="Goa"></option>
-                      <option value="Gujarat"></option>
-                      <option value="Haryana"></option>
-                      <option value="Himachal Pradesh"></option>
-                      <option value="Jammu and Kashmir"></option>
-                      <option value="Jharkhand"></option>
-                      <option value="Karnataka"></option>
-                      <option value="Kerala"></option>
-                      <option value="Ladakh"></option>
-                      <option value="Lakshadweep"></option>
-                      <option value="Madhya Pradesh"></option>
-                      <option value="Maharashtra"></option>
-                      <option value="Manipur"></option>
-                      <option value="Meghalaya"></option>
-                      <option value="Mizoram"></option>
-                      <option value="Nagaland"></option>
-                      <option value="Odisha"></option>
-                      <option value="Puducherry"></option>
-                      <option value="Punjab"></option>
-                      <option value="Rajasthan"></option>
-                      <option value="Sikkim"></option>
-                      <option value="Tamil Nadu"></option>
-                      <option value="Telangana"></option>
-                      <option value="Tripura"></option>
-                      <option value="Uttar Pradesh"></option>
-                      <option value="Uttarakhand"></option>
-                      <option value="West Bengal"></option>
-                    </datalist>
-                  </div>
-
-                  <div class="col-md-3 mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input
-                      type="text"
-                      id="city"
-                      name="city"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-3 mb-3">
-                    <label for="zipcode" class="form-label">Zip Code</label>
-                    <input
-                      type="number"
-                      id="zipcode"
-                      name="zipcode"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <label for="address" class="form-label">Address</label>
-                <textarea
-                  id="address"
-                  name="address"
-                  class="form-control"
-                  rows="3"
-                  required
-                ></textarea>
-
-                <div class="form-section-title">Professional Information</div>
-                <div class="row mt-3">
-                  <div class="col-md-8 mb-3">
-                    <label for="certificate" class="form-label"
-                      >Medical Certificate or Degree</label
-                    >
-                    <input
-                      type="text"
-                      id="certificate"
-                      name="certificate"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-4 mb-3">
-                    <label for="fees" class="form-label"
-                      >Checkup Fees (in INR)</label
-                    >
-                    <input
-                      type="number"
-                      id="fees"
-                      name="fees"
-                      class="form-control"
-                      min="0"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="phone" class="form-label">Contact Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-4 mb-3">
-                    <label for="experience" class="form-label"
-                      >Years of Experience</label
-                    >
-                    <input
-                      type="number"
-                      id="experience"
-                      name="experience"
-                      class="form-control"
-                      min="0"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-8 mb-3">
-                    <label for="specialization" class="form-label"
-                      >Specialization</label
-                    >
-                    <input
-                      type="text"
-                      id="specialization"
-                      name="specialization"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div class="form-section-title">Availability</div>
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="working-days" class="form-label"
-                      >Working Days</label
-                    >
-                    <input
-                      type="text"
-                      id="working-days"
-                      name="working-days"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-
-                  <div class="col-md-6 mb-3">
-                    <label for="work-time" class="form-label">Work Time</label>
-                    <input
-                      type="text"
-                      id="work-time"
-                      name="work-time"
-                      class="form-control"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <label for="work-place" class="form-label"
-                  >Workplace Address</label
-                >
-                <textarea
-                  id="work-place"
-                  name="work-place"
-                  class="form-control"
-                  rows="3"
-                  required
-                ></textarea>
-
-                <div class="form-section-title">Upload Documents</div>
-                <div class="mb-3">
-                  <label for="degree-proof" class="form-label"
-                    >Upload Degree Proof</label
-                  >
-                  <input
-                    class="form-control"
-                    type="file"
-                    name="degree-proof"
-                    id="degree-proof"
-                    accept=".pdf,.jpg,.png"
-                    required
-                  />
-                </div>
-
-                <button type="submit" id="Submit">Submit</button>
-              </form>
-            </div>
+            <div class="container form-container" id="container">
           </div>
         </div>
       </div>
     </div>
+    </div>
     <!-- /Doctor-form-Modal -->
 
-    <!-- patient-form-modal -->
+    <!-- user-form-modal -->
     <div
       class="modal fade"
       id="patientModal"
@@ -926,7 +658,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="patientModalLabel">
-              Patient Registration Form
+              User Registration Form
             </h1>
             <button
               type="button"
@@ -935,187 +667,35 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <div class="container patient-form-body">
-              <div class="patient-form-left-panel">
-                <div class="patient-form-logo">🩺</div>
-                <h2>Welcome</h2>
-                <p>You are 30 seconds away from booking your appointment!</p>
-              </div>
+          <div class="modal-body" style="background-color: #182438">
+            <div class="outer-user-form">
+              <div class="wrapper">
+                <!-- Left Section -->
+                <div class="left-panel">
+                  <i class="fas fa-rocket icon"></i>
+                  <h2 style="color: aliceblue">Welcome</h2>
+                  <button class="login-btn" id="toggleFormBtn">Login</button>
+                </div>
 
-              <div class="patient-form-right-panel">
-                <h2>Patient Registration Form</h2>
-                <form id="patient-form-registration-form">
-                  <div class="patient-form-grid">
-                    <div class="patient-form-group">
-                      <label for="full-name">Full Name *</label>
-                      <input
-                        type="text"
-                        id="patient-form-full-name"
-                        placeholder="e.g. John Doe"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="email">Email Address *</label>
-                      <input
-                        type="email"
-                        id="patient-form-email"
-                        placeholder="e.g. john.doe@example.com"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="dob">Date of Birth *</label>
-                      <input type="date" id="patient-form-dob" required />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="phone">Phone Number *</label>
-                      <input
-                        type="tel"
-                        id="patient-form-phone"
-                        placeholder="e.g. 9876543210"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="gender">Gender *</label>
-                      <select id="patient-form-gender" required>
-                        <option value="">Select Gender</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="state">State *</label>
-                      <input
-                        list="state-list"
-                        id="patient-form-state"
-                        placeholder="e.g. Maharashtra"
-                        required
-                      />
-                      <!-- Datalist added earlier -->
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="city">City *</label>
-                      <input
-                        type="text"
-                        id="patient-form-city"
-                        placeholder="e.g. Pune"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="zip">ZIP / Pin Code *</label>
-                      <input
-                        type="text"
-                        id="patient-form-zip"
-                        placeholder="e.g. 411001"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="relation">Relation to Patient *</label>
-                      <input
-                        type="text"
-                        id="patient-form-relation"
-                        placeholder="e.g. Self, Son, Daughter"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="preferred-doctor"
-                        >Preferred Doctor (Optional)</label
-                      >
-                      <input
-                        type="text"
-                        id="patient-form-preferred-doctor"
-                        placeholder="e.g. Dr. A. Sharma"
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="preferred-date"
-                        >Preferred Date for Checkup *</label
-                      >
-                      <input
-                        type="date"
-                        id="patient-form-preferred-date"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="aadhar">Aadhar Card Number *</label>
-                      <input
-                        type="text"
-                        id="patient-form-aadhar"
-                        placeholder="e.g. 1234 5678 9012"
-                        required
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="symptoms"
-                        >Symptoms / Medical Condition *</label
-                      >
-                      <textarea
-                        id="patient-form-symptoms"
-                        rows="2"
-                        placeholder="e.g. Fever, cough, fatigue for past 3 days"
-                        required
-                      ></textarea>
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="medical-reports"
-                        >Previous Medical Reports (Optional)</label
-                      >
-                      <input
-                        type="file"
-                        id="patient-form-medical-reports"
-                        title="Upload any previous medical reports"
-                      />
-                    </div>
-
-                    <div class="patient-form-group">
-                      <label for="previous-doctors"
-                        >Previous Doctors (Optional)</label
-                      >
-                      <input
-                        type="text"
-                        id="patient-form-previous-doctors"
-                        placeholder="e.g. Dr. Patel, Dr. Sinha"
-                      />
-                    </div>
-                  </div>
-
-                  <button type="submit" class="patient-form-submit-btn">
-                    Register
-                  </button>
-                </form>
+                <!-- Right Section -->
+                <div class="right-panel">
+                  <h2 id="formTitle"></h2>
+                  <form class="form-grid" id="mainForm">
+                    <!-- This form content will be dynamically filled by JavaScript -->
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /patient-form-modal -->
+    <!-- /user-form-modal -->
 
     <!-- ================/modal=================== -->
 
-    <script src="assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
+    <script src="./assets/vendor/bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/fontawesome-free-6.7.2-web/js/all.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

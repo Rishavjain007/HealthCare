@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <style>
+        :root {
+            --primary: #f7b500;
+            --primary-hover: #ffc107;
+            --bg-dark: #1b2a41;
+            --text-light: #ffffff;
+            --text-muted: #b0b8c1;
+            --white: #ffffff;
+            --dark: #1b2a41;
+            --light: #f5f6fa;
+            --radius: 0.5rem;
+            --transition: 0.3s ease;
+            --bg: #1b2a41f2;
+            --blue: #0a58ca;
+            --blue-light: #4facfe;
+            --blue-dark: #005bea;
+            --blue-hover: #00c6fb;
+            --blue-gradient: linear-gradient(to right, var(--blue-light), #00f2fe);
+            --blue-gradient-hover: linear-gradient(to right, var(--blue-dark), var(--blue-hover));
+            --left-panel-gradient: linear-gradient(to bottom right, #4f0fcf, #4361ee);
+            --black: #000000;
+            --bg-darkest: #1f2e48;
+            --bg-darker: #182438;
+            --muted: #6c757d;
+            --text-secondary: #495057;
+            --card-bg-light: #f9f9f9;
+            --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            --hover-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            --bg-darker-alt: #23354d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .blog-title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .blog-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+        }
+
+        .blog-section {
+            background-color: var(--bg-darker);
+            padding: 2rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .section-heading {
+            font-size: 1.2rem;
+            color: var(--primary-hover);
+            margin-bottom: 1rem;
+        }
+
+        .section-content {
+            font-size: 1rem;
+            color: var(--text-muted);
+            white-space: pre-wrap;
+        }
+
+        .section-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            margin: 1rem 0;
+        }
+
+        .loading-text {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .error-text {
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .container-main {
+                padding: 1rem;
+            }
+
+            .blog-title {
+                font-size: 2rem;
+            }
+
+            .section-heading {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+        <div id="blog-content"></div>
+    </div>
+
+    <script>
+        async function fetchBlogData() {
+            try {
+                const response = await fetch('../assets/data/blog.json');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch blog data');
+                }
+                const data = await response.json();
+                displayBlog(data.Blog[1]); // Display the third blog (Dementia)
+            } catch (error) {
+                document.getElementById('blog-content').innerHTML = `
+                    <div class="error-text">Error loading blog: ${error.message}</div>
+                `;
+            }
+        }
+
+        function displayBlog(blog) {
+            const contentDiv = document.getElementById('blog-content');
+            let html = `
+                <div class="blog-header">
+                    <h1 class="blog-title">${blog.heading || ''}</h1>
+                    <img src="${blog.image || ''}" alt="${blog.heading || ''}" class="blog-image">
+                </div>
+            `;
+
+            // Dynamically generate sections for all subheadings and subperas
+            for (let i = 1; i <= 17; i++) {
+                const subheading = blog[`subheading${i}`];
+                const subpera = blog[`subpera${i}`];
+                const img = blog[`img${i}`];
+
+                if (subheading && subpera) {
+                    html += `
+                        <div class="blog-section">
+                            <h2 class="section-heading">${subheading}</h2>
+                            ${img ? `<img src="${img}" alt="${subheading}" class="section-image">` : ''}
+                            <div class="section-content">${subpera}</div>
+                        </div>
+                    `;
+                }
+            }
+
+            contentDiv.innerHTML = html;
+        }
+
+        // Fetch and display blog data on page load
+        window.onload = fetchBlogData;
+    </script>
+</body>
+</html>
